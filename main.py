@@ -1,20 +1,38 @@
+# Copyright (c) 2018 Molly White
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+# and associated documentation files (the "Software"), to deal in the Software without
+# restriction, including without limitation the rights to use, copy, modify, merge, publish,
+# distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the
+# Software is furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all copies or
+# substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+# BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+# NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+# DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 import csv
 import json
 import requests
 
-API_URL = "https://nominatim.openstreetmap.org/search?street={street}&city={city}&state={state}&format=json"
-EMPTY_TEMPLATE="{{Location map~|United States|lat_deg=|lon_deg=}}"
+API_URL = "https://nominatim.openstreetmap.org/search?street={street}&city={city}&state={state}&format={format}"
+EMPTY_TEMPLATE = "{{Location map~|United States|lat_deg=|lon_deg=}}"
 TEMPLATE = "{{{{Location map~|United States|lat_deg={lat}|lon_deg={lon}}}}}"
+COMMENT = "<!--{date}: {city}, {state}-->"
 
 
 def get_coords(street, city, state):
-    req = requests.get(API_URL.format(street=street, city=city, state=state))
+    req = requests.get(API_URL.format(street=street, city=city, state=state, format="json"))
     req_json = json.loads(req.text)
     if len(req_json) == 1:
         return {"lat": req_json[0]["lat"], "lon": req_json[0]["lon"]}
     if len(req_json) == 0:
         # Try again without the street address
-        req = requests.get(API_URL.format(street="", city=city, state=state))
+        req = requests.get(API_URL.format(street="", city=city, state=state, format="json"))
         req_json = json.loads(req.text)
         if len(req_json) == 1:
             return {"lat": req_json[0]["lat"], "lon": req_json[0]["lon"]}
@@ -22,23 +40,25 @@ def get_coords(street, city, state):
     return None
 
 
-def write_coords(outfile, row, coords):
+def write_coords(outfile, date, street, city, state, coords):
+    comment = COMMENT.format(city=city, state=state, date=date)
     if coords:
-        outfile.write(TEMPLATE.format(lon=coords["lon"], lat=coords["lat"]) + "\n")
+        outfile.write(TEMPLATE.format(lon=coords["lon"], lat=coords["lat"]) + comment + "\n")
     else:
-        outfile.write(EMPTY_TEMPLATE + " # COULD NOT FIND COORDINATES FOR {}, {}, {}\n".format(row[3], row[2], row[1]))
+        api_url = API_URL.format(street=street, city=city, state=state, format="html")
+        outfile.write(EMPTY_TEMPLATE + comment + " # COULD NOT FIND COORDINATES FOR {}, {}, {}: {}\n".format(street, city, state, api_url))
 
 
 def main():
     with open("2018.csv", newline="\n", encoding='utf-8') as csvfile:
         with open("out.txt", "w", encoding='utf-8') as outfile:
             reader = csv.reader(csvfile, delimiter=",")
-            next(reader)    # Skip the header row
-            counter = 0
+            next(reader)  # Skip the header row
             for row in reader:
-                print("Processing {}, {}, {}".format(row[3], row[2], row[1]))
-                coords = get_coords(row[3], row[2], row[1])
-                write_coords(outfile, row, coords)
+                [date, state, city, street, *_] = row
+                print("Processing {}: {}, {}, {}".format(date, street, city, state))
+                coords = get_coords(street, city, state)
+                write_coords(outfile, date, street, city, state, coords)
 
 if __name__ == "__main__":
     main()
