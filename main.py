@@ -20,8 +20,8 @@ import json
 import requests
 
 API_URL = "https://nominatim.openstreetmap.org/search?street={street}&city={city}&state={state}&format={format}"
-EMPTY_TEMPLATE = "{{Location map~|United States|lat_deg=|lon_deg=}}"
-TEMPLATE = "{{{{Location map~|United States|lat_deg={lat}|lon_deg={lon}}}}}"
+EMPTY_TEMPLATE = "{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=|lon_deg=}}"
+TEMPLATE = "{{{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg={lat}|lon_deg={lon}}}}}"
 COMMENT = "<!--{date}: {city}, {state}-->"
 
 
