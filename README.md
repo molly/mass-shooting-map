@@ -7,3 +7,5 @@ when too many results are returned), a comment is added to make it easier to tra
 missing data.
 
 This is specific to the format of this particular CSV file so is not generically reusable.
+
+Result: https://en.wikipedia.org/wiki/Template:Map_of_2018_United_States_mass_shootings
