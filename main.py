@@ -1,4 +1,4 @@
-# Copyright (c) 2018 Molly White
+# Copyright (c) 2018-2019 Molly White
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy of this software
 # and associated documentation files (the "Software"), to deal in the Software without
@@ -50,7 +50,7 @@ def write_coords(outfile, date, street, city, state, coords):
 
 
 def main():
-    with open("2018.csv", newline="\n", encoding='utf-8') as csvfile:
+    with open("2019.csv", newline="\n", encoding='utf-8') as csvfile:
         with open("out.txt", "w", encoding='utf-8') as outfile:
             reader = csv.reader(csvfile, delimiter=",")
             next(reader)  # Skip the header row
