@@ -53,8 +53,8 @@ def main():
             for entry in entries:
                 date = entry[0]
                 location = re.sub("\[\]", "", entry[1])
-                if "," in location:
-                    [city, state] = (location.split(","))[-2:]
+                if ", " in location:
+                    [city, state] = (location.split(", "))[-2:]
                     coords = get_coords(city, state)
                     write_coords(outfile, date, city=city, state=state, coords=coords)
                 else:
