@@ -1,6 +1,6 @@
 # mass-shooting-tracker
 
-gvap.py takes a CSV from https://www.gunviolencearchive.org/reports/mass-shooting, looks up the coordinates for the locations,
+gva.py takes a CSV from https://www.gunviolencearchive.org/reports/mass-shooting, looks up the coordinates for the locations,
 and produces a text file to create a map on Wikipedia using the
 [Location map+](https://en.wikipedia.org/wiki/Template:Location_map%2B) template. Where coordinates can't be found (or
 when too many results are returned), a comment is added to make it easier to track down and manually fill in the
