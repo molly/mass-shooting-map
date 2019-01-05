@@ -15,50 +15,51 @@
 # DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-import csv
+import re
 import json
 import requests
 
-API_URL = "https://nominatim.openstreetmap.org/search?street={street}&city={city}&state={state}&format={format}"
+API_URL = "https://nominatim.openstreetmap.org/search?city={city}&state={state}&format={format}"
 EMPTY_TEMPLATE = "{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=|lon_deg=}}"
 TEMPLATE = "{{{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg={lat}|lon_deg={lon}}}}}"
 COMMENT = "<!--{date}: {city}, {state}-->"
+COMMENT_LOCATION = "<!--{date}: {location}-->"
+MATCH_EXPRESSION = re.compile("\|(?:{{dts\|)?((?:January|February|March|April|May|June|July|August|September|October|November|December).*?)(?:}})?\n\|\[\[(?:.*?\|)?(.*)\]\]")
 
 
-def get_coords(street, city, state):
-    req = requests.get(API_URL.format(street=street, city=city, state=state, format="json"))
+def get_coords(city, state):
+    req = requests.get(API_URL.format(city=city, state=state, format="json"))
     req_json = json.loads(req.text)
     if len(req_json) == 1:
         return {"lat": req_json[0]["lat"], "lon": req_json[0]["lon"]}
-    if len(req_json) == 0:
-        # Try again without the street address
-        req = requests.get(API_URL.format(street="", city=city, state=state, format="json"))
-        req_json = json.loads(req.text)
-        if len(req_json) == 1:
-            return {"lat": req_json[0]["lat"], "lon": req_json[0]["lon"]}
-    # If this still didn't work we'll need to do this manually
     return None
 
 
-def write_coords(outfile, date, street, city, state, coords):
-    comment = COMMENT.format(city=city, state=state, date=date)
+def write_coords(outfile, date, coords=None, city=None, state=None, location=None):
+    if city and state:
+        comment = COMMENT.format(city=city, state=state, date=date)
+    else:
+        comment = COMMENT_LOCATION.format(location=location, date=date)
     if coords:
         outfile.write(TEMPLATE.format(lon=coords["lon"], lat=coords["lat"]) + comment + "\n")
     else:
-        api_url = API_URL.format(street=street, city=city, state=state, format="html")
-        outfile.write(EMPTY_TEMPLATE + comment + " # COULD NOT FIND COORDINATES FOR {}, {}, {}: {}\n".format(street, city, state, api_url))
+        outfile.write(EMPTY_TEMPLATE + comment + " # COULD NOT FIND COORDINATES FOR {}, {}\n".format(city, state))
 
 
 def main():
-    with open("2019.csv", newline="\n", encoding='utf-8') as csvfile:
-        with open("gva_out.txt", "w", encoding='utf-8') as outfile:
-            reader = csv.reader(csvfile, delimiter=",")
-            next(reader)  # Skip the header row
-            for row in reader:
-                [date, state, city, street, *_] = row
-                print("Processing {}: {}, {}, {}".format(date, street, city, state))
-                coords = get_coords(street, city, state)
-                write_coords(outfile, date, street, city, state, coords)
+    with open("List of mass shootings in the United States.txt", encoding='utf-8') as infile:
+        with open("wikicode_out.txt", "w", encoding='utf-8') as outfile:
+            entries = MATCH_EXPRESSION.findall(infile.read())
+            for entry in entries:
+                date = entry[0]
+                location = re.sub("\[\]", "", entry[1])
+                if "," in location:
+                    [city, state] = (location.split(","))[-2:]
+                    coords = get_coords(city, state)
+                    write_coords(outfile, date, city=city, state=state, coords=coords)
+                else:
+                    write_coords(outfile, date, location=location)
+
 
 if __name__ == "__main__":
     main()
