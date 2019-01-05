@@ -51,7 +51,7 @@ def write_coords(outfile, date, street, city, state, coords):
 
 def main():
     with open("2019.csv", newline="\n", encoding='utf-8') as csvfile:
-        with open("out.txt", "w", encoding='utf-8') as outfile:
+        with open("gva_out.txt", "w", encoding='utf-8') as outfile:
             reader = csv.reader(csvfile, delimiter=",")
             next(reader)  # Skip the header row
             for row in reader:
