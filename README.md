@@ -6,9 +6,9 @@ and produces a text file to create a map on Wikipedia using the
 when too many results are returned), a comment is added to make it easier to track down and manually fill in the
 missing data. This is specific to the format of this particular CSV file so is not generically reusable.
 
-wikicode.py does the same, but takes the text of a Wikipedia article like
-https://en.wikipedia.org/wiki/List_of_mass_shootings_in_the_United_States to do the same. This is very much a best-effort piece
- of code, so there will be missing data that needs to be cleaned up by hand.
+wikicode.py does the same, but uses the text of a Wikipedia article like
+https://en.wikipedia.org/wiki/List_of_mass_shootings_in_the_United_States This is very much a best-effort piece of code, so
+there will be missing data that needs to be cleaned up by hand.
 
 Results: 
 * https://en.wikipedia.org/wiki/Template:Map_of_United_States_mass_shootings
