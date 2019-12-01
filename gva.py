@@ -17,9 +17,8 @@
 
 import argparse
 import csv
-import datetime
+from datetime import datetime
 import json
-import pickle
 import requests
 
 API_URL = "https://nominatim.openstreetmap.org/search?street={street}&city={city}&state={state}&format={format}"
@@ -35,21 +34,26 @@ def parse_arguments():
     parser.add_argument("-i", "--interactive", help="input missing coordinates while script is running", action="store_true")
     args = parser.parse_args()
     if args.action not in ['update', 'write']:
-        raise Exception("Unrecognized action {}".format(args.action))
+        raise Exception("Unrecognized action {}. Expected either 'update' or 'write'.".format(args.action))
     return args
 
 
 def get_id(ymd, city, state, prev_id):
+    """Create a unique ID from the date, city, and state of the event. The increment at the end handles the possibility
+    of multiple shootings in one city on the same day."""
     id_start = "{}_{}_{}".format(ymd, city.replace(' ', ''), state.replace(' ', ''))
     incr = 0
     if prev_id:
         split_prev_id = prev_id.split("_")
-        if id_start is "{}_{}_{}".format(split_prev_id[0], split_prev_id[1], split_prev_id[2]):
+        if id_start == "{}_{}_{}".format(split_prev_id[0], split_prev_id[1], split_prev_id[2]):
             incr = int(split_prev_id[3]) + 1
     return "{}_{}".format(id_start, incr)
 
 
 def get_coords(street, city, state, interactive=False):
+    """Attempt to look up coordinates of the shooting using OpenStreetMap. If the script is run with the interactive
+    flag, the user will be prompted to enter coordinates if the location can't be found. Otherwise, the empty value
+    is written to the outfile with a comment indicating it needs to be updated."""
     # A lot of these locations are written as "5000 block of X St.", which confuses OSM.
     # Changing it to "5000 X St." helps OSM while remaining plenty precise.
     street = street.replace(" block of", "")
@@ -69,7 +73,7 @@ def get_coords(street, city, state, interactive=False):
     # If this still didn't work we'll need to do this manually
     if interactive:
         api_url = API_URL.format(street=street, city=city, state=state, format="html")
-        print("Find coordinates for {}, {}, {}: {}".format(street, city, state, api_url))
+        print("Find coordinates for {}, {}, {}: {}. Rounding will be done automatically.".format(street, city, state, api_url))
         while True:
             latlon = input("lat,lon: ")
             try:
@@ -82,11 +86,13 @@ def get_coords(street, city, state, interactive=False):
 
 
 def write_coords(outfile, date, street, city, state, coords):
+    """Write coordinates to the output file, in a format that can be pasted into the {{Location map+}} Wikipedia
+    map template. If the script was run without the interactive flag, this output file will need to be manually checked
+    for missing coordinate values."""
     comment = COMMENT.format(city=city, state=state, date=date)
     if coords:
         lat = float(coords["lat"])
         lon = float(coords["lon"])
-        # Round lat/lon to 4 decimal points -- OSM often returns artificially precise values
         outfile.write(TEMPLATE.format(lon=round(lon, 4), lat=round(lat, 4)) + comment + "\n")
     else:
         api_url = API_URL.format(street=street, city=city, state=state, format="html")
@@ -96,10 +102,14 @@ def write_coords(outfile, date, street, city, state, coords):
 def main():
     args = parse_arguments()
     shootings_dict = {}
-    if args.action is 'update':
-        old_shootings_dict = pickle.load(open(YEAR + ".pickle", "rb"))
-        old_shootings_keys_const = old_shootings_dict.keys()
-        remaining_old_keys = old_shootings_keys_const.copy()
+    if args.action == 'update':
+        try:
+            with open("2019.json", encoding="utf-8") as shootings_json_file:
+                old_shootings_dict = json.load(shootings_json_file)
+                old_shootings_keys_const = old_shootings_dict.keys()
+                remaining_old_keys = old_shootings_keys_const.copy()
+        except FileNotFoundError:
+            old_shootings_dict = None
     prev_id = None
     with open(YEAR + ".csv", newline="\n", encoding='utf-8') as csvfile:
         with open(YEAR + "_gva_out.txt", "w", encoding='utf-8') as outfile:
@@ -112,20 +122,25 @@ def main():
                 ymd = parsed_date.strftime("%Y%m%d")
                 entry_id = get_id(ymd, city, state, prev_id)
 
-                if args.action is 'update' and entry_id in old_shootings_dict:
+                if args.action == 'update' and old_shootings_dict and entry_id in old_shootings_dict:
                     remaining_old_keys.remove(entry_id)
-                    if street is old_shootings_dict[entry_id]["street"]:
+                    if street == old_shootings_dict[entry_id]["street"]:
                         print("Found {} - {}: {}, {}, {}".format(entry_id, date, street, city, state))
                         coords = {
                             "lat": old_shootings_dict[entry_id]["lat"],
                             "lon": old_shootings_dict[entry_id]["lon"]
                         }
-                    if street is old_shootings_dict[entry_id]["street"]:
+                    else:
                         print("Found {} with outdated street information - {}: {}, {}, {}".format(entry_id, date, street, city, state))
                         coords = get_coords(street, city, state, interactive=args.interactive)
                 else:
                     print("Processing new entry {} - {}: {}, {}, {}".format(entry_id, date, street, city, state))
                     coords = get_coords(street, city, state, interactive=args.interactive)
+
+                rounded_coords = None
+                if coords:
+                    # Round lat/lon to 4 decimal points -- OSM often returns artificially precise values
+                    rounded_coords = {"lat": round(float(coords["lat"]), 4), "lon": round(float(coords["lon"]))}
 
                 # New entry
                 shootings_dict[entry_id] = {
@@ -133,15 +148,20 @@ def main():
                     "state": state,
                     "city": city,
                     "street": street,
-                    "killed": killed,
-                    "injured": injured,
-                    "lat": coords["lat"] if coords else None,
-                    "lon": coords["lon"] if coords else None
+                    "killed": int(killed),
+                    "injured": int(injured),
+                    "total": int(killed) + int(injured),
+                    "lat": rounded_coords["lat"] if rounded_coords else None,
+                    "lon": rounded_coords["lon"] if rounded_coords else None,
+                    "description": "",
+                    "refs": [""]
                 }
 
-                write_coords(outfile, date, street, city, state, coords)
+                write_coords(outfile, date, street, city, state, rounded_coords)
                 prev_id = entry_id
-    pickle.dump(shootings_dict, open(YEAR + ".pickle", "wb"))
+
+    with open(YEAR + ".json", "w", encoding="utf-8") as shootings_json_file:
+        json.dump(shootings_dict, shootings_json_file, indent=2, sort_keys=True)
 
 
 if __name__ == "__main__":
