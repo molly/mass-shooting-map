@@ -102,7 +102,7 @@ def main():
     shootings_dict = {}
     if args.action == 'update':
         try:
-            with open("2019.json", encoding="utf-8") as shootings_json_file:
+            with open(YEAR + ".json", encoding="utf-8") as shootings_json_file:
                 old_shootings_dict = json.load(shootings_json_file)
                 old_shootings_keys_const = old_shootings_dict.keys()
                 remaining_old_keys = old_shootings_keys_const.copy()
