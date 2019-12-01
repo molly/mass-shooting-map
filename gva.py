@@ -91,9 +91,7 @@ def write_coords(outfile, date, street, city, state, coords):
     for missing coordinate values."""
     comment = COMMENT.format(city=city, state=state, date=date)
     if coords:
-        lat = float(coords["lat"])
-        lon = float(coords["lon"])
-        outfile.write(TEMPLATE.format(lon=round(lon, 4), lat=round(lat, 4)) + comment + "\n")
+        outfile.write(TEMPLATE.format(lon=coords["lon"], lat=coords["lat"]) + comment + "\n")
     else:
         api_url = API_URL.format(street=street, city=city, state=state, format="html")
         outfile.write(EMPTY_TEMPLATE + comment + " # COULD NOT FIND COORDINATES FOR {}, {}, {}: {}\n".format(street, city, state, api_url))
