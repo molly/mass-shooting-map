@@ -20,12 +20,16 @@ import csv
 from datetime import datetime
 import json
 import requests
+import time
 
 API_URL = "https://nominatim.openstreetmap.org/search?street={street}&city={city}&state={state}&format={format}"
 EMPTY_TEMPLATE = "{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=|lon_deg=}}"
 TEMPLATE = "{{{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg={lat}|lon_deg={lon}}}}}"
 COMMENT = "<!--{date}: {city}, {state}-->"
 YEAR = "2019"
+REQUEST_HEADERS = {
+    "User-Agent": "Wikipedia United States Mass Shootings Map: https://github.com/molly/mass-shooting-map"
+}
 
 
 def parse_arguments():
@@ -59,13 +63,15 @@ def get_coords(street, city, state, interactive=False):
     street = street.replace(" block of", "")
 
     # Attempt to pull coords from OSM
-    req = requests.get(API_URL.format(street=street, city=city, state=state, format="json"))
+    req = requests.get(API_URL.format(street=street, city=city, state=state, format="json"), headers=REQUEST_HEADERS)
+    if req.status_code == 429:
+        raise Exception("OSM has rate-limited you. Molly probably needs to write better caching.")
     req_json = json.loads(req.text)
     if len(req_json) == 1:
         return {"lat": req_json[0]["lat"], "lon": req_json[0]["lon"]}
     if len(req_json) == 0:
         # No results; try again without the street address
-        req = requests.get(API_URL.format(street="", city=city, state=state, format="json"))
+        req = requests.get(API_URL.format(street="", city=city, state=state, format="json"), headers=REQUEST_HEADERS)
         req_json = json.loads(req.text)
         if len(req_json) == 1:
             return {"lat": req_json[0]["lat"], "lon": req_json[0]["lon"]}
@@ -109,6 +115,7 @@ def main():
         except FileNotFoundError:
             old_shootings_dict = None
     prev_id = None
+    last_req = None
     with open(YEAR + ".csv", newline="\n", encoding='utf-8') as csvfile:
         with open(YEAR + "_gva_out.txt", "w", encoding='utf-8') as outfile:
             reader = csv.reader(csvfile, delimiter=",")
@@ -130,9 +137,15 @@ def main():
                         }
                     else:
                         print("Found {} with outdated street information - {}: {}, {}, {}".format(entry_id, date, street, city, state))
+                        if last_req and (datetime.now() - last_req).seconds < 1:
+                            time.sleep(1)
+                        last_req = datetime.now()
                         coords = get_coords(street, city, state, interactive=args.interactive)
                 else:
                     print("Processing new entry {} - {}: {}, {}, {}".format(entry_id, date, street, city, state))
+                    if last_req and (datetime.now() - last_req).seconds < 1:
+                        time.sleep(1)
+                    last_req = datetime.now()
                     coords = get_coords(street, city, state, interactive=args.interactive)
 
                 rounded_coords = None
