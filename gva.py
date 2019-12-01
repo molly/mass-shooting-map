@@ -43,7 +43,9 @@ def get_coords(street, city, state):
 def write_coords(outfile, date, street, city, state, coords):
     comment = COMMENT.format(city=city, state=state, date=date)
     if coords:
-        outfile.write(TEMPLATE.format(lon=coords["lon"], lat=coords["lat"]) + comment + "\n")
+        lat = float(coords["lat"])
+        lon = float(coords["lon"])
+        outfile.write(TEMPLATE.format(lon=round(lat, 4), lat=round(lon,4)) + comment + "\n")
     else:
         api_url = API_URL.format(street=street, city=city, state=state, format="html")
         outfile.write(EMPTY_TEMPLATE + comment + " # COULD NOT FIND COORDINATES FOR {}, {}, {}: {}\n".format(street, city, state, api_url))
