@@ -1,2 +1,0 @@
-{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=34.0007493|lon_deg=-81.0343313}}<!--January 1, 2019: Columbia, South Carolina-->
-{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=|lon_deg=}}<!--January 1, 2019: Tallahassee, Florida--> # COULD NOT FIND COORDINATES FOR 2020 W Pensacola St, Tallahassee, Florida: https://nominatim.openstreetmap.org/search?street=2020 W Pensacola St&city=Tallahassee&state=Florida&format=html
