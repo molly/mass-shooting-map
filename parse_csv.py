@@ -20,6 +20,7 @@ from constants import API_URL, EMPTY_TEMPLATE, TEMPLATE, COMMENT, YEAR, REQUEST_
 import csv
 from datetime import datetime
 import json
+import re
 import requests
 import time
 
@@ -43,6 +44,7 @@ def create_id(ymd, city, state, shootings_dict):
         incr += 1
     return "{}_{}".format(id_prefix, incr)
 
+
 def parse_req(req):
     if req.status_code == 429:
         raise Exception("OSM has rate-limited you. Molly probably needs to write better caching.")
@@ -50,6 +52,7 @@ def parse_req(req):
     if len(req_json) == 1:
         return {"lat": req_json[0]["lat"], "lon": req_json[0]["lon"]}
     return None
+
 
 def get_coords(street, city, state, interactive=False):
     """Attempt to look up coordinates of the shooting using OpenStreetMap. If the script is run with the interactive
@@ -61,13 +64,13 @@ def get_coords(street, city, state, interactive=False):
 
     if street:
         # Attempt to pull coords from OSM with street address
-        req = requests.get(API_URL.format(street=street, city=city, state=state, format="json"), headers=REQUEST_HEADERS)
+        req = requests.get(API_URL.format(street=street, city=re.sub("\(.*?\)", "", city), state=state, format="json"), headers=REQUEST_HEADERS)
         coords = parse_req(req)
         if coords:
             return coords
 
     # Attempt to pull coords from OSM without street address
-    req = requests.get(API_URL.format(street="", city=city, state=state, format="json"), headers=REQUEST_HEADERS)
+    req = requests.get(API_URL.format(street="", city=re.sub("\(.*?\)", "", city), state=state, format="json"), headers=REQUEST_HEADERS)
     coords = parse_req(req)
     if coords:
         return coords
@@ -147,7 +150,7 @@ def main():
                 last_req = datetime.now()
                 coords = get_coords(street, city, state, interactive=args.interactive)
 
-            rounded_coords = None
+            rounded_coords = round_coords(coords)
 
             # New entry
             shootings_dict[entry_id] = {
