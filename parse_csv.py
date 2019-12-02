@@ -58,12 +58,11 @@ def get_coords(street, city, state, interactive=False):
     """Attempt to look up coordinates of the shooting using OpenStreetMap. If the script is run with the interactive
     flag, the user will be prompted to enter coordinates if the location can't be found. Otherwise, the empty value
     is written to the outfile with a comment indicating it needs to be updated."""
-    # A lot of these locations are written as "5000 block of X St.", which confuses OSM.
-    # Changing it to "5000 X St." helps OSM while remaining plenty precise.
-    street = street.replace(" block of", "")
-
     if street:
         # Attempt to pull coords from OSM with street address
+        street = street.replace(" block of", "")
+        # A lot of these locations are written as "5000 block of X St.", which confuses OSM.
+        # Changing it to "5000 X St." helps OSM while remaining plenty precise.
         req = requests.get(API_URL.format(street=street, city=re.sub("\(.*?\)", "", city), state=state, format="json"), headers=REQUEST_HEADERS)
         coords = parse_req(req)
         if coords:

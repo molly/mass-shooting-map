@@ -93,6 +93,8 @@ def main():
     with open("wikitext.txt", encoding='utf-8') as infile:
         entries = infile.read().split("|-")
         for entry in entries:
+            if not entry:
+                continue
             match = MATCH_REGEX.search(entry)
             if not match:
                 print(entry)
