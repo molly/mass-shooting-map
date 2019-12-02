@@ -87,8 +87,7 @@ def get_coords(street, city, state, interactive=False):
                 return {"lat": lat.strip(), "lon": lon.strip()}
             except ValueError:
                 print("Invalid input. Please enter comma-separated latitude and longitude.")
-    else:
-        return None
+    return None
 
 
 def write_coords(outfile, date, street, city, state, coords):
@@ -151,7 +150,7 @@ def main():
                 rounded_coords = None
                 if coords:
                     # Round lat/lon to 4 decimal points -- OSM often returns artificially precise values
-                    rounded_coords = {"lat": round(float(coords["lat"]), 4), "lon": round(float(coords["lon"]))}
+                    rounded_coords = {"lat": round(float(coords["lat"]), 4), "lon": round(float(coords["lon"]), 4)}
 
                 # New entry
                 shootings_dict[entry_id] = {
