@@ -59,7 +59,7 @@ def main():
         open(YEAR + "_table.txt", "w", encoding="utf-8") as table_file:
         shootings_dict = json.load(shootings_json_file)
         keys = list(shootings_dict.keys())
-        keys.sort(key=lambda x:x.split("_")[0])
+        keys.sort(key=lambda x:x.split("_")[0], reverse=True)
         for key in keys:
             shooting = shootings_dict[key]
             if args.format in ['map', 'both']:
