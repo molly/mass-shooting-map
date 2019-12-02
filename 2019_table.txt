@@ -10,7 +10,7 @@
 |2
 |3
 |'''5'''
-|None
+|
 |-
 |{{Dts|December 1, 2019}}
 |[[New Orleans|New Orleans, Louisiana]]
@@ -24,7 +24,7 @@
 |2
 |2
 |'''4'''
-|None
+|
 |-
 |{{Dts|November 29, 2019}}
 |[[Amarillo, Texas]]
@@ -185,7 +185,7 @@
 |1
 |3
 |'''4'''
-|None
+|
 |-
 |{{Dts|November 7, 2019}}
 |[[Conyers, Georgia]]
@@ -255,14 +255,14 @@
 |4
 |0
 |'''4'''
-|None
+|
 |-
 |{{Dts|October 29, 2019}}
 |[[Baltimore, Maryland]]
 |1
 |3
 |'''4'''
-|None
+|
 |-
 |{{Dts|October 29, 2019}}
 |[[Long Beach, California]]
@@ -304,7 +304,7 @@
 |2
 |6
 |'''8'''
-|None
+|
 |-
 |{{Dts|October 26, 2019}}
 |[[Jersey City, New Jersey]]
@@ -437,7 +437,7 @@
 |1
 |3
 |'''4'''
-|None
+|
 |-
 |{{Dts|October 10, 2019}}
 |[[Milwaukee|Milwaukee, Wisconsin]]
@@ -472,7 +472,7 @@
 |0
 |5
 |'''5'''
-|None
+|
 |-
 |{{Dts|October 7, 2019}}
 |[[Abington, Massachusetts]]
@@ -514,7 +514,7 @@
 |0
 |5
 |'''5'''
-|None
+|
 |-
 |{{Dts|October 3, 2019}}
 |[[Marshall, Missouri]]
@@ -605,7 +605,7 @@
 |4
 |0
 |'''4'''
-|None
+|
 |-
 |{{Dts|September 21, 2019}}
 |[[Indianapolis|Indianapolis, Indiana]]
@@ -654,7 +654,7 @@
 |1
 |5
 |'''6'''
-|None
+|
 |-
 |{{Dts|September 18, 2019}}
 |[[Chicago|Chicago, Illinois]]
@@ -815,7 +815,7 @@
 |0
 |4
 |'''4'''
-|None
+|
 |-
 |{{Dts|August 31, 2019}}
 |[[Charlotte, North Carolina]]
@@ -829,7 +829,7 @@
 |2
 |3
 |'''5'''
-|None
+|
 |-
 |{{Dts|August 31, 2019}}
 |[[Frederick, Maryland]]
@@ -843,7 +843,7 @@
 |0
 |4
 |'''4'''
-|None
+|
 |-
 |{{Dts|August 31, 2019}}
 |[[Odessa, Texas|Odessa, Texas]]
@@ -857,7 +857,7 @@
 |2
 |2
 |'''4'''
-|None
+|
 |-
 |{{Dts|August 30, 2019}}
 |[[Baltimore, Maryland]]
@@ -927,7 +927,7 @@
 |0
 |4
 |'''4'''
-|None
+|
 |-
 |{{Dts|August 23, 2019}}
 |[[Houston, Texas]]
@@ -1039,7 +1039,7 @@
 |0
 |4
 |'''4'''
-|None
+|
 |-
 |{{Dts|August 12, 2019}}
 |[[Hickory, North Carolina]]
@@ -1172,7 +1172,7 @@
 |0
 |4
 |'''4'''
-|None
+|
 |-
 |{{Dts|August 4, 2019}}
 |[[Memphis, Tennessee]]
@@ -1284,7 +1284,7 @@
 |0
 |4
 |'''4'''
-|None
+|
 |-
 |{{Dts|July 27, 2019}}
 |[[Brooklyn|Brooklyn, New York]]
@@ -1305,7 +1305,7 @@
 |1
 |3
 |'''4'''
-|None
+|
 |-
 |{{Dts|July 25, 2019}}
 |[[Albemarle, North Carolina]]
@@ -1347,14 +1347,14 @@
 |0
 |4
 |'''4'''
-|None
+|
 |-
 |{{Dts|July 20, 2019}}
 |[[Baltimore, Maryland]]
 |1
 |3
 |'''4'''
-|None
+|
 |-
 |{{Dts|July 20, 2019}}
 |[[Chicago|Chicago, Illinois]]
@@ -1424,7 +1424,7 @@
 |0
 |4
 |'''4'''
-|None
+|
 |-
 |{{Dts|July 13, 2019}}
 |[[Chicago|Chicago, Illinois]]
@@ -1466,7 +1466,7 @@
 |2
 |2
 |'''4'''
-|None
+|
 |-
 |{{Dts|July 7, 2019}}
 |[[Albuquerque, New Mexico]]
@@ -1487,7 +1487,7 @@
 |0
 |4
 |'''4'''
-|None
+|
 |-
 |{{Dts|July 7, 2019}}
 |[[Flint, Michigan]]
@@ -1501,7 +1501,7 @@
 |0
 |5
 |'''5'''
-|None
+|
 |-
 |{{Dts|July 7, 2019}}
 |[[Wichita, Kansas]]
@@ -1522,7 +1522,7 @@
 |5
 |0
 |'''5'''
-|None
+|
 |-
 |{{Dts|July 6, 2019}}
 |[[San Jose, California]]
@@ -1676,7 +1676,7 @@
 |0
 |4
 |'''4'''
-|None
+|
 |-
 |{{Dts|June 29, 2019}}
 |[[Hartford, Connecticut]]
@@ -1704,7 +1704,7 @@
 |0
 |4
 |'''4'''
-|None
+|
 |-
 |{{Dts|June 28, 2019}}
 |[[Paterson, New Jersey]]
@@ -1718,7 +1718,7 @@
 |0
 |5
 |'''5'''
-|None
+|
 |-
 |{{Dts|June 27, 2019}}
 |[[Atlanta|Atlanta, Georgia]]
@@ -1739,7 +1739,7 @@
 |0
 |4
 |'''4'''
-|None
+|
 |-
 |{{Dts|June 23, 2019}}
 |[[Abbeville, South Carolina]]
@@ -1823,7 +1823,7 @@
 |5
 |0
 |'''5'''
-|None
+|
 |-
 |{{Dts|June 20, 2019}}
 |[[Allentown, Pennsylvania]]
@@ -1991,7 +1991,7 @@
 |0
 |4
 |'''4'''
-|None
+|
 |-
 |{{Dts|June 1, 2019}}
 |[[Macon, Georgia]]
@@ -2019,7 +2019,7 @@
 |1
 |3
 |'''4'''
-|None
+|
 |-
 |{{Dts|May 30, 2019}}
 |[[Robbins, Illinois]]
@@ -2040,14 +2040,14 @@
 |1
 |3
 |'''4'''
-|None
+|
 |-
 |{{Dts|May 27, 2019}}
 |[[Saint Louis, Missouri]]
 |2
 |2
 |'''4'''
-|None
+|
 |-
 |{{Dts|May 27, 2019}}
 |[[Trenton, New Jersey]]
@@ -2068,7 +2068,7 @@
 |0
 |5
 |'''5'''
-|None
+|
 |-
 |{{Dts|May 26, 2019}}
 |[[Chicago|Chicago, Illinois]]
@@ -2103,7 +2103,7 @@
 |1
 |3
 |'''4'''
-|None
+|
 |-
 |{{Dts|May 25, 2019}}
 |[[Baltimore|Baltimore, Maryland]]
@@ -2124,7 +2124,7 @@
 |3
 |2
 |'''5'''
-|None
+|
 |-
 |{{Dts|May 25, 2019}}
 |[[Oklahoma City|Oklahoma City, Oklahoma]]
@@ -2208,7 +2208,7 @@
 |0
 |4
 |'''4'''
-|None
+|
 |-
 |{{Dts|May 18, 2019}}
 |[[Winston-Salem, North Carolina]]
@@ -2222,7 +2222,7 @@
 |2
 |4
 |'''6'''
-|None
+|
 |-
 |{{Dts|May 17, 2019}}
 |[[Sacramento, California]]
@@ -2250,7 +2250,7 @@
 |0
 |4
 |'''4'''
-|None
+|
 |-
 |{{Dts|May 13, 2019}}
 |[[New Orleans|New Orleans, Louisiana]]
@@ -2341,7 +2341,7 @@
 |1
 |4
 |'''5'''
-|None
+|
 |-
 |{{Dts|May 4, 2019}}
 |[[Wilmington, Delaware]]
@@ -2432,7 +2432,7 @@
 |0
 |6
 |'''6'''
-|None
+|
 |-
 |{{Dts|April 27, 2019}}
 |[[Poway|Poway, California]]
@@ -2523,7 +2523,7 @@
 |0
 |4
 |'''4'''
-|None
+|
 |-
 |{{Dts|April 12, 2019}}
 |[[Carbondale, Illinois]]
@@ -2593,7 +2593,7 @@
 |0
 |7
 |'''7'''
-|None
+|
 |-
 |{{Dts|April 6, 2019}}
 |[[Chicago|Chicago, Illinois]]
@@ -2936,7 +2936,7 @@
 |0
 |5
 |'''5'''
-|None
+|
 |-
 |{{Dts|February 3, 2019}}
 |[[Chicago|Chicago, Illinois]]
@@ -2950,7 +2950,7 @@
 |4
 |0
 |'''4'''
-|None
+|
 |-
 |{{Dts|February 1, 2019}}
 |[[San Diego, California]]
@@ -3139,7 +3139,7 @@
 |1
 |3
 |'''4'''
-|None
+|
 |-
 |{{Dts|January 2, 2019}}
 |[[Jonesboro, Arkansas]]
