@@ -34,14 +34,21 @@ MATCH_EXPR = DATE_LINE_EXPR + LOCATION_EXPR + KILLED_EXPR + INJURED_EXPR + TOTAL
 MATCH_REGEX = re.compile(MATCH_EXPR, flags=re.IGNORECASE)
 
 
+def get_location(loc):
+    """Get city and state from location string."""
+    try:
+        [city, state] = loc.rsplit(",", 1)
+        return [city.strip(), state.strip()]
+    except ValueError:
+        print(loc)
+        inp = input("Couldn't find location. Please input [city, state]")
+        [city, state] = inp.rsplit(",", 1)
+        return [city.strip(), state.strip()]
+
+
 def find_id(ymd, match, shootings_dict):
     """This tries to return a matching ID for the entry, or None if no entry exists in the dictionary."""
-    try:
-        [city, state] = match.group("loc").rsplit(", ", 1)
-    except ValueError:
-        print(match.group("loc"))
-        raise Exception("Could not parse city and state from location.")
-
+    [city, state] = get_location(match.group("loc"))
     # First try to match based on exact ID
     incr = 0
     shooting_id = "{}_{}_{}_{}".format(ymd, city.replace(" ", ""), state.replace(" ", ""), incr)
@@ -126,11 +133,7 @@ def main():
                 shootings_dict[entry_id]["refs"] = get_refs(match)
             else:
                 # This is a new entry.
-                try:
-                    [city, state] = match.group("loc").rsplit(", ", 1)
-                except ValueError:
-                    print(match.group("loc"))
-                    raise Exception("Could not parse city and state from location.")
+                [city, state] = get_location(match.group("loc"))
                 entry_id = create_id(ymd, city, state, shootings_dict)
                 coords = get_coords(None, city, state, interactive=True)
                 killed = int(match.group("killed"))
@@ -156,6 +159,9 @@ def main():
                     "description": match.group("desc").strip(),
                     "refs": get_refs(match)
                 }
+
+    with open(YEAR + ".json", "w", encoding="utf-8") as shootings_json_file:
+        json.dump(shootings_dict, shootings_json_file)
 
 if __name__ == "__main__":
     main()
