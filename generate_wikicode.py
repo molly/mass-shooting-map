@@ -16,7 +16,8 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 import argparse
-from constants import COMMENT, TEMPLATE, API_URL, EMPTY_TEMPLATE, YEAR
+from constants import COMMENT, TEMPLATE, API_URL, EMPTY_TEMPLATE, YEAR, TABLE_ENTRY_TEMPLATE
+from datetime import datetime
 import json
 
 
@@ -24,7 +25,7 @@ def parse_arguments():
     parser = argparse.ArgumentParser()
     parser.add_argument("format", help="'table', 'map', or 'both'")
     args = parser.parse_args()
-    if args.action not in ['table', 'map', 'both']:
+    if args.format not in ['table', 'map', 'both']:
         raise Exception("Unrecognized action {}. Expected one of 'table', 'map', or 'both'.".format(args.action))
     return args
 
@@ -41,6 +42,16 @@ def write_map_coords(outfile, shooting):
         outfile.write(EMPTY_TEMPLATE + comment + " # COULD NOT FIND COORDINATES FOR {}, {}, {}: {}\n".format(shooting["street"], shooting["city"], shooting["state"], api_url))
 
 
+def write_table_entry(outfile, shooting):
+    """Write shootings to the output file, in a format that can be pasted into a wikitable. If the script was run
+    without the interactive flag, this output file will need to be manually checked for missing coordinate values."""
+    dtime = datetime.strptime(shooting["date"], "%Y%m%d")
+    mdy = dtime.strftime("%B %-d, %Y")
+    loc = "{}, {}".format(shooting["city"], shooting["state"])
+    entry = TABLE_ENTRY_TEMPLATE.format(date=mdy, location=loc, killed=shooting["killed"], injured=shooting["injured"], total=shooting["total"], desc=shooting["description"], refs="".join(shooting["refs"]))
+    outfile.write(entry)
+
+
 def main():
     args = parse_arguments()
     with open(YEAR + ".json", encoding="utf-8") as shootings_json_file, \
@@ -53,6 +64,8 @@ def main():
             shooting = shootings_dict[key]
             if args.format in ['map', 'both']:
                 write_map_coords(map_file, shooting)
+            if args.format in ['table', 'both']:
+                write_table_entry(table_file, shooting)
 
 
 if __name__ == "__main__":
