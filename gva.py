@@ -124,11 +124,7 @@ def main():
                 entry_id = get_id(ymd, city, state, shootings_dict)
 
                 if args.action == 'update' and old_shootings_dict and entry_id in old_shootings_dict:
-                    try:
-                        remaining_old_keys.remove(entry_id)
-                    except ValueError:
-                        print(entry_id)
-                        print(remaining_old_keys)
+                    remaining_old_keys.remove(entry_id)
                     if street == old_shootings_dict[entry_id]["street"] and old_shootings_dict[entry_id]["lat"]:
                         print("Found {} - {}: {}, {}, {}".format(entry_id, date, street, city, state))
                         coords = {
