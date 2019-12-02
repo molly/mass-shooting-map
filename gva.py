@@ -42,16 +42,14 @@ def parse_arguments():
     return args
 
 
-def get_id(ymd, city, state, prev_id):
+def get_id(ymd, city, state, shootings_dict):
     """Create a unique ID from the date, city, and state of the event. The increment at the end handles the possibility
     of multiple shootings in one city on the same day."""
-    id_start = "{}_{}_{}".format(ymd, city.replace(' ', ''), state.replace(' ', ''))
+    id_prefix = "{}_{}_{}".format(ymd, city.replace(' ', ''), state.replace(' ', ''))
     incr = 0
-    if prev_id:
-        split_prev_id = prev_id.split("_")
-        if id_start == "{}_{}_{}".format(split_prev_id[0], split_prev_id[1], split_prev_id[2]):
-            incr = int(split_prev_id[3]) + 1
-    return "{}_{}".format(id_start, incr)
+    while "{}_{}".format(id_prefix, incr) in shootings_dict:
+        incr += 1
+    return "{}_{}".format(id_prefix, incr)
 
 
 def get_coords(street, city, state, interactive=False):
@@ -105,16 +103,15 @@ def write_coords(outfile, date, street, city, state, coords):
 def main():
     args = parse_arguments()
     shootings_dict = {}
+    last_req = None
     if args.action == 'update':
         try:
             with open(YEAR + ".json", encoding="utf-8") as shootings_json_file:
                 old_shootings_dict = json.load(shootings_json_file)
-                old_shootings_keys_const = old_shootings_dict.keys()
+                old_shootings_keys_const = list(old_shootings_dict.keys())
                 remaining_old_keys = old_shootings_keys_const.copy()
         except FileNotFoundError:
             old_shootings_dict = None
-    prev_id = None
-    last_req = None
     with open(YEAR + ".csv", newline="\n", encoding='utf-8') as csvfile:
         with open(YEAR + "_gva_out.txt", "w", encoding='utf-8') as outfile:
             reader = csv.reader(csvfile, delimiter=",")
@@ -124,25 +121,31 @@ def main():
                 [date, state, city, street, killed, injured, *_] = row
                 parsed_date = datetime.strptime(date, "%B %d, %Y")
                 ymd = parsed_date.strftime("%Y%m%d")
-                entry_id = get_id(ymd, city, state, prev_id)
+                entry_id = get_id(ymd, city, state, shootings_dict)
 
                 if args.action == 'update' and old_shootings_dict and entry_id in old_shootings_dict:
-                    remaining_old_keys.remove(entry_id)
-                    if street == old_shootings_dict[entry_id]["street"]:
+                    try:
+                        remaining_old_keys.remove(entry_id)
+                    except ValueError:
+                        print(entry_id)
+                        print(remaining_old_keys)
+                    if street == old_shootings_dict[entry_id]["street"] and old_shootings_dict[entry_id]["lat"]:
                         print("Found {} - {}: {}, {}, {}".format(entry_id, date, street, city, state))
                         coords = {
                             "lat": old_shootings_dict[entry_id]["lat"],
                             "lon": old_shootings_dict[entry_id]["lon"]
                         }
                     else:
-                        print("Found {} with outdated street information - {}: {}, {}, {}".format(entry_id, date, street, city, state))
+                        print("Found {} with missing or outdated info - {}: {}, {}, {}".format(entry_id, date, street, city, state))
                         if last_req and (datetime.now() - last_req).seconds < 1:
+                            # Respect OSM's 1-second rate limit policy
                             time.sleep(1)
                         last_req = datetime.now()
                         coords = get_coords(street, city, state, interactive=args.interactive)
                 else:
                     print("Processing new entry {} - {}: {}, {}, {}".format(entry_id, date, street, city, state))
                     if last_req and (datetime.now() - last_req).seconds < 1:
+                        # Respect OSM's 1-second rate limit policy
                         time.sleep(1)
                     last_req = datetime.now()
                     coords = get_coords(street, city, state, interactive=args.interactive)
@@ -168,10 +171,14 @@ def main():
                 }
 
                 write_coords(outfile, date, street, city, state, rounded_coords)
-                prev_id = entry_id
 
     with open(YEAR + ".json", "w", encoding="utf-8") as shootings_json_file:
         json.dump(shootings_dict, shootings_json_file, indent=2, sort_keys=True)
+
+    if args.action == 'update' and len(remaining_old_keys) >= 1:
+        print("The following entries were found in the previous record of shootings but were not found in the new CSV."
+              "Consider checking these to ensure duplicate entries have not been added.")
+        [print(x) for x in remaining_old_keys]
 
 
 if __name__ == "__main__":
