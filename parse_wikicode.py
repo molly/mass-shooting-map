@@ -23,7 +23,7 @@ import re
 
 MONTHS_EXPR = "(?:January|February|March|April|May|June|July|August|September|October|November|December)"
 DATE_LINE_EXPR = "(?:\n*\|(?:{{dts\|)?(?P<date>" + MONTHS_EXPR + " \d+, \d{4})(?:}})?)\n*"
-LOCATION_EXPR = "\|\[\[(?:.*\|)?(?P<loc>.*)\]\]\n*"
+LOCATION_EXPR = "\|\[\[(?P<wikilink_target>.*\|)?(?P<loc>.*)\]\]\n*"
 KILLED_EXPR = "\|(?P<killed>\d+).*\n*"
 INJURED_EXPR = "\|(?P<injured>\d+).*\n*"
 TOTAL_EXPR = "\|'''(?P<total>\d+)'''.*\n*"
@@ -118,6 +118,8 @@ def main():
                     confirm = input("['y' to confirm, any other character if not]: ")
                     if confirm in ['y', 'Y']:
                         shootings_dict[entry_id]["total"] = shootings_dict[entry_id]["killed"] + shootings_dict[entry_id]["injured"]
+                if match.group("wikilink_target"):
+                    shootings_dict[entry_id]["wikilink_target"] = match.group("wikilink_target")
                 shootings_dict[entry_id]["description"] = match.group("desc")
                 shootings_dict[entry_id]["refs"] = get_refs(match)
             else:
@@ -143,6 +145,7 @@ def main():
                     "state": state,
                     "city": city,
                     "street": None,
+                    "wikilink_target": match.group("wikilink_target"),
                     "killed": killed,
                     "injured": injured,
                     "total": total,

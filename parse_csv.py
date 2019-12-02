@@ -155,13 +155,14 @@ def main():
                 "state": state,
                 "city": city,
                 "street": street,
+                "wikilink_target": None,
                 "killed": int(killed),
                 "injured": int(injured),
                 "total": int(killed) + int(injured),
                 "lat": rounded_coords["lat"] if rounded_coords else None,
                 "lon": rounded_coords["lon"] if rounded_coords else None,
-                "description": "",
-                "refs": [""]
+                "description": None,
+                "refs": []
             }
 
     with open(YEAR + ".json", "w", encoding="utf-8") as shootings_json_file:
