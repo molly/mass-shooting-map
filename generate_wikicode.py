@@ -48,6 +48,8 @@ def write_table_entry(outfile, shooting):
     dtime = datetime.strptime(shooting["date"], "%Y%m%d")
     mdy = dtime.strftime("%B %-d, %Y")
     loc = "{}, {}".format(shooting["city"], shooting["state"])
+    if shooting["wikilink_target"]:
+        loc = shooting["wikilink_target"] + "|" + loc
     entry = TABLE_ENTRY_TEMPLATE.format(date=mdy, location=loc, killed=shooting["killed"], injured=shooting["injured"], total=shooting["total"], desc=shooting["description"], refs="".join(shooting["refs"]))
     outfile.write(entry)
 
