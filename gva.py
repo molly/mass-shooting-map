@@ -16,20 +16,12 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 import argparse
+from constants import API_URL, EMPTY_TEMPLATE, TEMPLATE, COMMENT, YEAR, REQUEST_HEADERS
 import csv
 from datetime import datetime
 import json
 import requests
 import time
-
-API_URL = "https://nominatim.openstreetmap.org/search?street={street}&city={city}&state={state}&format={format}"
-EMPTY_TEMPLATE = "{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=|lon_deg=}}"
-TEMPLATE = "{{{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg={lat}|lon_deg={lon}}}}}"
-COMMENT = "<!--{date}: {city}, {state}-->"
-YEAR = "2019"
-REQUEST_HEADERS = {
-    "User-Agent": "Wikipedia United States Mass Shootings Map: https://github.com/molly/mass-shooting-map"
-}
 
 
 def parse_arguments():
@@ -104,14 +96,19 @@ def main():
     args = parse_arguments()
     shootings_dict = {}
     last_req = None
-    if args.action == 'update':
-        try:
-            with open(YEAR + ".json", encoding="utf-8") as shootings_json_file:
+    try:
+        with open(YEAR + ".json", encoding="utf-8") as shootings_json_file:
+            if args.action == 'update':
                 old_shootings_dict = json.load(shootings_json_file)
                 old_shootings_keys_const = list(old_shootings_dict.keys())
                 remaining_old_keys = old_shootings_keys_const.copy()
-        except FileNotFoundError:
-            old_shootings_dict = None
+            else:
+                print(YEAR + ".json already exists. Do you really want to continue in write mode and overwrite the file?")
+                confirm = input("Type 'y' to confirm, or any other character to exit: ")
+                if confirm not in ['y', 'Y']:
+                    return
+    except FileNotFoundError:
+        old_shootings_dict = None
     with open(YEAR + ".csv", newline="\n", encoding='utf-8') as csvfile:
         with open(YEAR + "_gva_out.txt", "w", encoding='utf-8') as outfile:
             reader = csv.reader(csvfile, delimiter=",")
