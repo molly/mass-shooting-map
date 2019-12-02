@@ -34,21 +34,29 @@ MATCH_EXPR = DATE_LINE_EXPR + LOCATION_EXPR + KILLED_EXPR + INJURED_EXPR + TOTAL
 MATCH_REGEX = re.compile(MATCH_EXPR, flags=re.IGNORECASE)
 
 
-def get_location(loc):
+def prompt_location(loc, ymd):
+    """Prompt user to input city and state"""
+    print(ymd + ": " + loc)
+    inp = input("Couldn't find location. Please input city, state: ")
+    [city, state] = inp.rsplit(",", 1)
+    return [city.strip(), state.strip()]
+
+
+def get_location(loc, ymd):
     """Get city and state from location string."""
+    if any(char in loc for char in ["[", "]", "|"]):
+        # Our effort at parsing the location hasn't worked, prompt for string to avoid messy data.
+        return prompt_location(loc, ymd)
     try:
         [city, state] = loc.rsplit(",", 1)
         return [city.strip(), state.strip()]
     except ValueError:
-        print(loc)
-        inp = input("Couldn't find location. Please input [city, state]")
-        [city, state] = inp.rsplit(",", 1)
-        return [city.strip(), state.strip()]
+        return prompt_location(loc, ymd)
 
 
 def find_id(ymd, match, shootings_dict):
     """This tries to return a matching ID for the entry, or None if no entry exists in the dictionary."""
-    [city, state] = get_location(match.group("loc"))
+    [city, state] = get_location(match.group("loc"), ymd)
     # First try to match based on exact ID
     incr = 0
     shooting_id = "{}_{}_{}_{}".format(ymd, city.replace(" ", ""), state.replace(" ", ""), incr)
@@ -133,7 +141,7 @@ def main():
                 shootings_dict[entry_id]["refs"] = get_refs(match)
             else:
                 # This is a new entry.
-                [city, state] = get_location(match.group("loc"))
+                [city, state] = get_location(match.group("loc"), ymd)
                 entry_id = create_id(ymd, city, state, shootings_dict)
                 coords = get_coords(None, city, state, interactive=True)
                 killed = int(match.group("killed"))
@@ -161,7 +169,7 @@ def main():
                 }
 
     with open(YEAR + ".json", "w", encoding="utf-8") as shootings_json_file:
-        json.dump(shootings_dict, shootings_json_file)
+        json.dump(shootings_dict, shootings_json_file, indent=2, sort_keys=True)
 
 if __name__ == "__main__":
     main()
