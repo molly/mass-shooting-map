@@ -90,7 +90,7 @@ def main():
         raise Exception("This is meant to be run after gva.py, and expects a JSON file to be available.")
 
     # Read wikicode
-    with open("wikicode.txt", encoding='utf-8') as infile:
+    with open("wikitext.txt", encoding='utf-8') as infile:
         entries = infile.read().split("|-")
         for entry in entries:
             match = MATCH_REGEX.search(entry)
