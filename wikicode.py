@@ -15,51 +15,142 @@
 # DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-import re
+from constants import API_URL, EMPTY_TEMPLATE, TEMPLATE, COMMENT, COMMENT_LOCATION, YEAR, REQUEST_HEADERS
+from gva import create_id, get_coords, round_coords
+from datetime import datetime
 import json
-import requests
+import re
 
-API_URL = "https://nominatim.openstreetmap.org/search?city={city}&state={state}&format={format}"
-EMPTY_TEMPLATE = "{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=|lon_deg=}}"
-TEMPLATE = "{{{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg={lat}|lon_deg={lon}}}}}"
-COMMENT = "<!--{date}: {city}, {state}-->"
-COMMENT_LOCATION = "<!--{date}: {location}-->"
-MATCH_EXPRESSION = re.compile("\|(?:{{dts\|)?((?:January|February|March|April|May|June|July|August|September|October|November|December).*?)(?:}})?\n\|\[\[(?:.*?\|)?(.*)\]\]")
+MONTHS_EXPR = "(?:January|February|March|April|May|June|July|August|September|October|November|December)"
+DATE_LINE_EXPR = "(?:\n*\|(?:{{dts\|)?(?P<date>" + MONTHS_EXPR + " \d+, \d{4})(?:}})?)\n*"
+LOCATION_EXPR = "\|\[\[(?:.*\|)?(?P<loc>.*)\]\]\n*"
+KILLED_EXPR = "\|(?P<killed>\d+).*\n*"
+INJURED_EXPR = "\|(?P<injured>\d+).*\n*"
+TOTAL_EXPR = "\|'''(?P<total>\d+)'''.*\n*"
+DESC_EXPR = "\|(?P<desc>.*?)"
+REFS_EXPR = "(?P<ref><ref.*<\/ref>)+\n*"
+REF_EXPR = "(<ref.*?>.*?</ref>)"
+MATCH_EXPR = DATE_LINE_EXPR + LOCATION_EXPR + KILLED_EXPR + INJURED_EXPR + TOTAL_EXPR + DESC_EXPR + REFS_EXPR
+MATCH_REGEX = re.compile(MATCH_EXPR, flags=re.IGNORECASE)
 
 
-def get_coords(city, state):
-    req = requests.get(API_URL.format(city=city, state=state, format="json"))
-    req_json = json.loads(req.text)
-    if len(req_json) == 1:
-        return {"lat": req_json[0]["lat"], "lon": req_json[0]["lon"]}
+def find_id(ymd, match, shootings_dict):
+    """This tries to return a matching ID for the entry, or None if no entry exists in the dictionary."""
+    try:
+        [city, state] = match.group("loc").rsplit(", ", 1)
+    except ValueError:
+        print(match.group("loc"))
+        raise Exception("Could not parse city and state from location.")
+
+    # First try to match based on exact ID
+    incr = 0
+    shooting_id = "{}_{}_{}_{}".format(ymd, city.replace(" ", ""), state.replace(" ", ""), incr)
+    while shooting_id in shootings_dict:
+        if int(match.group('killed')) == shootings_dict[shooting_id]["killed"] and int(match.group('injured')) == shootings_dict[shooting_id]["injured"]:
+            return shooting_id
+        else:
+            print("ID {} found, but killed/injured values don\'t match. Please manually confirm.".format(shooting_id))
+            print(match.groups())
+            print(shootings_dict[shooting_id])
+            confirm = input("Is this the same incident? ['y' to confirm, any other character if not]: ")
+            if confirm in ['y', 'Y']:
+                return shooting_id
+            incr += 1
+            shooting_id = "{}_{}_{}_{}".format(ymd, city.replace(" ", ""), state.replace(" ", ""), incr)
+
+    # No exact ID found, try to match more broadly
+    keys = list(shootings_dict.keys())
+    key_date_matches = list(filter(lambda x: x.startswith(ymd), keys))
+    for key_date_match in key_date_matches:
+        parts = key_date_match.split("_")
+        if parts[2] == state:
+            print("Found shooting in {} on {}. City in JSON file is '{}'; city in wikicode is '{}'. Is this the"
+                  " same incident? (You can fix the values later)".format(state, ymd, shootings_dict[key_date_match]["city"], city))
+            confirm = input("['y' to confirm, any other character if not]: ")
+            if confirm in ['y', 'Y']:
+                return key_date_match
+
     return None
 
 
-def write_coords(outfile, date, coords=None, city=None, state=None, location=None):
-    if city and state:
-        comment = COMMENT.format(city=city, state=state, date=date)
-    else:
-        comment = COMMENT_LOCATION.format(location=location, date=date)
-    if coords:
-        outfile.write(TEMPLATE.format(lon=coords["lon"], lat=coords["lat"]) + comment + "\n")
-    else:
-        outfile.write(EMPTY_TEMPLATE + comment + " # COULD NOT FIND COORDINATES FOR {}, {}\n".format(city, state))
+def get_refs(match):
+    if match.group("ref"):
+        refs = re.split(REF_EXPR, match.group("ref"))
+        filtered_refs = list(filter(lambda x: x.startswith("<ref"), refs))
+        return filtered_refs
+    return []
 
 
 def main():
-    with open("List of mass shootings in the United States.txt", encoding='utf-8') as infile:
-        with open("wikicode_out.txt", "w", encoding='utf-8') as outfile:
-            entries = MATCH_EXPRESSION.findall(infile.read())
-            for entry in entries:
-                date = entry[0]
-                location = re.sub("\[\]", "", entry[1])
-                if ", " in location:
-                    [city, state] = (location.split(", "))[-2:]
-                    coords = get_coords(city, state)
-                    write_coords(outfile, date, city=city, state=state, coords=coords)
-                else:
-                    write_coords(outfile, date, location=location)
+    # Load existing JSON data
+    try:
+        with open(YEAR + ".json", encoding="utf-8") as shootings_json_file:
+            shootings_dict = json.load(shootings_json_file)
+    except FileNotFoundError:
+        raise Exception("This is meant to be run after gva.py, and expects a JSON file to be available.")
 
+    # Read wikicode
+    with open("wikicode.txt", encoding='utf-8') as infile:
+        entries = infile.read().split("|-")
+        for entry in entries:
+            match = MATCH_REGEX.search(entry)
+            if not match:
+                print(entry)
+                raise Exception("Unable to parse line")
+            parsed_date = datetime.strptime(match.group("date"), "%B %d, %Y")
+            ymd = parsed_date.strftime("%Y%m%d")
+            entry_id = find_id(ymd, match, shootings_dict)
+            if entry_id:
+                # There's a matching entry in the JSON file, update it with the wikicode values.
+                if int(match.group("killed")) != shootings_dict[entry_id]["killed"]:
+                    print("Number of people killed for ID {} doesn't match. (JSON: {}, wikicode: {})".format(entry_id, shootings_dict[entry_id]["killed"], match.group("killed")))
+                    killed = input("Enter number of people killed: ")
+                    shootings_dict[entry_id]["killed"] = int(killed)
+                if int(match.group("injured")) != shootings_dict[entry_id]["injured"]:
+                    print("Number of people injured for ID {} doesn't match. (JSON: {}, wikicode: {})".format(entry_id, shootings_dict[entry_id]["injured"], match.group("injured")))
+                    injured = input("Enter number of people injured: ")
+                    shootings_dict[entry_id]["injured"] = int(injured)
+                if shootings_dict[entry_id]["injured"] + shootings_dict[entry_id]["killed"] != shootings_dict[entry_id]["total"]:
+                    print("Total number of victims doesn't add up ({} killed, {} injured, {} total). Update to {}?"
+                          .format(shootings_dict[entry_id]["killed"], shootings_dict[entry_id]["injured"],
+                                  shootings_dict[entry_id]["total"],
+                                  shootings_dict[entry_id]["killed"] + shootings_dict[entry_id]["injured"]))
+                    confirm = input("['y' to confirm, any other character if not]: ")
+                    if confirm in ['y', 'Y']:
+                        shootings_dict[entry_id]["total"] = shootings_dict[entry_id]["killed"] + shootings_dict[entry_id]["injured"]
+                shootings_dict[entry_id]["description"] = match.group("desc")
+                shootings_dict[entry_id]["refs"] = get_refs(match)
+            else:
+                # This is a new entry.
+                try:
+                    [city, state] = match.group("loc").rsplit(", ", 1)
+                except ValueError:
+                    print(match.group("loc"))
+                    raise Exception("Could not parse city and state from location.")
+                entry_id = create_id(ymd, city, state, shootings_dict)
+                coords = get_coords(None, city, state, interactive=True)
+                killed = int(match.group("killed"))
+                injured = int(match.group("injured"))
+                total = int(match.group("total"))
+                if killed + injured != total:
+                    print("Total number of victims doesn't add up ({} killed, {} injured, {} total). Update to {}?".format(killed, injured, total, killed + injured))
+                    confirm = input("['y' to confirm, any other character if not]: ")
+                    if confirm in ['y', 'Y']:
+                        total = killed + injured
+                rounded_coords = round_coords(coords)
+                shootings_dict[entry_id] = {
+                    "date": ymd,
+                    "state": state,
+                    "city": city,
+                    "street": None,
+                    "killed": killed,
+                    "injured": injured,
+                    "total": total,
+                    "lat": rounded_coords["lat"] if rounded_coords else None,
+                    "lon": rounded_coords["lon"] if rounded_coords else None,
+                    "description": match.group("desc").strip(),
+                    "refs": get_refs(match)
+                }
 
 if __name__ == "__main__":
     main()

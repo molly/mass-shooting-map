@@ -34,7 +34,7 @@ def parse_arguments():
     return args
 
 
-def get_id(ymd, city, state, shootings_dict):
+def create_id(ymd, city, state, shootings_dict):
     """Create a unique ID from the date, city, and state of the event. The increment at the end handles the possibility
     of multiple shootings in one city on the same day."""
     id_prefix = "{}_{}_{}".format(ymd, city.replace(' ', ''), state.replace(' ', ''))
@@ -43,6 +43,13 @@ def get_id(ymd, city, state, shootings_dict):
         incr += 1
     return "{}_{}".format(id_prefix, incr)
 
+def parse_req(req):
+    if req.status_code == 429:
+        raise Exception("OSM has rate-limited you. Molly probably needs to write better caching.")
+    req_json = json.loads(req.text)
+    if len(req_json) == 1:
+        return {"lat": req_json[0]["lat"], "lon": req_json[0]["lon"]}
+    return None
 
 def get_coords(street, city, state, interactive=False):
     """Attempt to look up coordinates of the shooting using OpenStreetMap. If the script is run with the interactive
@@ -52,23 +59,22 @@ def get_coords(street, city, state, interactive=False):
     # Changing it to "5000 X St." helps OSM while remaining plenty precise.
     street = street.replace(" block of", "")
 
-    # Attempt to pull coords from OSM
-    req = requests.get(API_URL.format(street=street, city=city, state=state, format="json"), headers=REQUEST_HEADERS)
-    if req.status_code == 429:
-        raise Exception("OSM has rate-limited you. Molly probably needs to write better caching.")
-    req_json = json.loads(req.text)
-    if len(req_json) == 1:
-        return {"lat": req_json[0]["lat"], "lon": req_json[0]["lon"]}
-    if len(req_json) == 0:
-        # No results; try again without the street address
-        req = requests.get(API_URL.format(street="", city=city, state=state, format="json"), headers=REQUEST_HEADERS)
-        req_json = json.loads(req.text)
-        if len(req_json) == 1:
-            return {"lat": req_json[0]["lat"], "lon": req_json[0]["lon"]}
+    if street:
+        # Attempt to pull coords from OSM with street address
+        req = requests.get(API_URL.format(street=street, city=city, state=state, format="json"), headers=REQUEST_HEADERS)
+        coords = parse_req(req)
+        if coords:
+            return coords
+
+    # Attempt to pull coords from OSM without street address
+    req = requests.get(API_URL.format(street="", city=city, state=state, format="json"), headers=REQUEST_HEADERS)
+    coords = parse_req(req)
+    if coords:
+        return coords
 
     # If this still didn't work we'll need to do this manually
     if interactive:
-        api_url = API_URL.format(street=street, city=city, state=state, format="html")
+        api_url = API_URL.format(street=street if street else "", city=city, state=state, format="html")
         print("Find coordinates for {}, {}, {}: {}. Rounding will be done automatically.".format(street, city, state, api_url))
         while True:
             latlon = input("lat,lon: ")
@@ -80,22 +86,19 @@ def get_coords(street, city, state, interactive=False):
     return None
 
 
-def write_coords(outfile, date, street, city, state, coords):
-    """Write coordinates to the output file, in a format that can be pasted into the {{Location map+}} Wikipedia
-    map template. If the script was run without the interactive flag, this output file will need to be manually checked
-    for missing coordinate values."""
-    comment = COMMENT.format(city=city, state=state, date=date)
+def round_coords(coords):
+    """Round lat/lon to 4 decimal points -- OSM often returns artificially precise values"""
     if coords:
-        outfile.write(TEMPLATE.format(lon=coords["lon"], lat=coords["lat"]) + comment + "\n")
-    else:
-        api_url = API_URL.format(street=street, city=city, state=state, format="html")
-        outfile.write(EMPTY_TEMPLATE + comment + " # COULD NOT FIND COORDINATES FOR {}, {}, {}: {}\n".format(street, city, state, api_url))
+        return {"lat": round(float(coords["lat"]), 4), "lon": round(float(coords["lon"]), 4)}
+    return None
 
 
 def main():
     args = parse_arguments()
     shootings_dict = {}
     last_req = None
+
+    # Load existing JSON data
     try:
         with open(YEAR + ".json", encoding="utf-8") as shootings_json_file:
             if args.action == 'update':
@@ -109,61 +112,57 @@ def main():
                     return
     except FileNotFoundError:
         old_shootings_dict = None
-    with open(YEAR + ".csv", newline="\n", encoding='utf-8') as csvfile:
-        with open(YEAR + "_gva_out.txt", "w", encoding='utf-8') as outfile:
-            reader = csv.reader(csvfile, delimiter=",")
-            next(reader)  # Skip the header row
-            for row in reader:
-                # Parse date and get ID
-                [date, state, city, street, killed, injured, *_] = row
-                parsed_date = datetime.strptime(date, "%B %d, %Y")
-                ymd = parsed_date.strftime("%Y%m%d")
-                entry_id = get_id(ymd, city, state, shootings_dict)
 
-                if args.action == 'update' and old_shootings_dict and entry_id in old_shootings_dict:
-                    remaining_old_keys.remove(entry_id)
-                    if street == old_shootings_dict[entry_id]["street"] and old_shootings_dict[entry_id]["lat"]:
-                        print("Found {} - {}: {}, {}, {}".format(entry_id, date, street, city, state))
-                        coords = {
-                            "lat": old_shootings_dict[entry_id]["lat"],
-                            "lon": old_shootings_dict[entry_id]["lon"]
-                        }
-                    else:
-                        print("Found {} with missing or outdated info - {}: {}, {}, {}".format(entry_id, date, street, city, state))
-                        if last_req and (datetime.now() - last_req).seconds < 1:
-                            # Respect OSM's 1-second rate limit policy
-                            time.sleep(1)
-                        last_req = datetime.now()
-                        coords = get_coords(street, city, state, interactive=args.interactive)
+    # Read CSV
+    with open(YEAR + ".csv", newline="\n", encoding='utf-8') as csvfile:
+        reader = csv.reader(csvfile, delimiter=",")
+        next(reader)  # Skip the header row
+        for row in reader:
+            # Parse date and get ID
+            [date, state, city, street, killed, injured, *_] = row
+            parsed_date = datetime.strptime(date, "%B %d, %Y")
+            ymd = parsed_date.strftime("%Y%m%d")
+            entry_id = create_id(ymd, city, state, shootings_dict)
+
+            if args.action == 'update' and old_shootings_dict and entry_id in old_shootings_dict:
+                remaining_old_keys.remove(entry_id)
+                if street == old_shootings_dict[entry_id]["street"] and old_shootings_dict[entry_id]["lat"]:
+                    print("Found {} - {}: {}, {}, {}".format(entry_id, date, street, city, state))
+                    coords = {
+                        "lat": old_shootings_dict[entry_id]["lat"],
+                        "lon": old_shootings_dict[entry_id]["lon"]
+                    }
                 else:
-                    print("Processing new entry {} - {}: {}, {}, {}".format(entry_id, date, street, city, state))
+                    print("Found {} with missing or outdated info - {}: {}, {}, {}".format(entry_id, date, street, city, state))
                     if last_req and (datetime.now() - last_req).seconds < 1:
                         # Respect OSM's 1-second rate limit policy
                         time.sleep(1)
                     last_req = datetime.now()
                     coords = get_coords(street, city, state, interactive=args.interactive)
+            else:
+                print("Processing new entry {} - {}: {}, {}, {}".format(entry_id, date, street, city, state))
+                if last_req and (datetime.now() - last_req).seconds < 1:
+                    # Respect OSM's 1-second rate limit policy
+                    time.sleep(1)
+                last_req = datetime.now()
+                coords = get_coords(street, city, state, interactive=args.interactive)
 
-                rounded_coords = None
-                if coords:
-                    # Round lat/lon to 4 decimal points -- OSM often returns artificially precise values
-                    rounded_coords = {"lat": round(float(coords["lat"]), 4), "lon": round(float(coords["lon"]), 4)}
+            rounded_coords = None
 
-                # New entry
-                shootings_dict[entry_id] = {
-                    "date": ymd,
-                    "state": state,
-                    "city": city,
-                    "street": street,
-                    "killed": int(killed),
-                    "injured": int(injured),
-                    "total": int(killed) + int(injured),
-                    "lat": rounded_coords["lat"] if rounded_coords else None,
-                    "lon": rounded_coords["lon"] if rounded_coords else None,
-                    "description": "",
-                    "refs": [""]
-                }
-
-                write_coords(outfile, date, street, city, state, rounded_coords)
+            # New entry
+            shootings_dict[entry_id] = {
+                "date": ymd,
+                "state": state,
+                "city": city,
+                "street": street,
+                "killed": int(killed),
+                "injured": int(injured),
+                "total": int(killed) + int(injured),
+                "lat": rounded_coords["lat"] if rounded_coords else None,
+                "lon": rounded_coords["lon"] if rounded_coords else None,
+                "description": "",
+                "refs": [""]
+            }
 
     with open(YEAR + ".json", "w", encoding="utf-8") as shootings_json_file:
         json.dump(shootings_dict, shootings_json_file, indent=2, sort_keys=True)
