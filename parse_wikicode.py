@@ -16,7 +16,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 from constants import API_URL, EMPTY_TEMPLATE, TEMPLATE, COMMENT, COMMENT_LOCATION, YEAR, REQUEST_HEADERS
-from gva import create_id, get_coords, round_coords
+from parse_csv import create_id, get_coords, round_coords
 from datetime import datetime
 import json
 import re
