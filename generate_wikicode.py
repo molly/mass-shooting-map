@@ -34,7 +34,9 @@ def write_map_coords(outfile, shooting):
     """Write coordinates to the output file, in a format that can be pasted into the {{Location map+}} Wikipedia
     map template. If the script was run without the interactive flag, this output file will need to be manually checked
     for missing coordinate values."""
-    comment = COMMENT.format(city=shooting["city"], state=shooting["state"], date=shooting["date"])
+    dtime = datetime.strptime(shooting["date"], "%Y%m%d")
+    mdy = dtime.strftime("%B %-d, %Y")
+    comment = COMMENT.format(city=shooting["city"], state=shooting["state"], date=mdy)
     if shooting["lat"] and shooting["lon"]:
         outfile.write(TEMPLATE.format(lon=shooting["lon"], lat=shooting["lat"]) + comment + "\n")
     else:

@@ -1,0 +1,452 @@
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.7425|lon_deg=-88.3121}}<!--December 1, 2019: Aurora, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=32.8131|lon_deg=-93.4297}}<!--December 1, 2019: Cotton Valley, Louisiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.953|lon_deg=-90.0694}}<!--December 1, 2019: New Orleans, Louisiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.9822|lon_deg=-90.0648}}<!--December 1, 2019: New Orleans, Louisiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=35.2072|lon_deg=-101.8338}}<!--November 29, 2019: Amarillo, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.8467|lon_deg=-73.8786}}<!--November 27, 2019: Bronx, New York-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=25.8152|lon_deg=-80.2425}}<!--November 25, 2019: Brownsville, Florida-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.499|lon_deg=-86.8611}}<!--November 24, 2019: Birmingham, Alabama-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=30.9912|lon_deg=-92.082}}<!--November 24, 2019: Cottonport, Louisiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=34.0537|lon_deg=-118.2428}}<!--November 24, 2019: Los Angeles, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=34.0424|lon_deg=-118.2545}}<!--November 23, 2019: Los Angeles, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=32.4072|lon_deg=-91.1874}}<!--November 23, 2019: Tallulah, Louisiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=47.9218|lon_deg=-122.2352}}<!--November 21, 2019: Everett, Washington-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.769|lon_deg=-118.1916}}<!--November 21, 2019: Long Beach, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=37.94|lon_deg=-122.3505}}<!--November 20, 2019: Richmond, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.7457|lon_deg=-74.1961}}<!--November 18, 2019: Newark, New Jersey-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.4761|lon_deg=-81.7337}}<!--November 17, 2019: Cleveland, Ohio-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=36.7608|lon_deg=-119.7153}}<!--November 17, 2019: Fresno, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=32.6776|lon_deg=-117.0691}}<!--November 16, 2019: San Diego, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=34.4437|lon_deg=-118.5186}}<!--November 14, 2019: Santa Clarita, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=26.6804|lon_deg=-80.6761}}<!--November 11, 2019: Belle Glade, Florida-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.1001|lon_deg=-94.5781}}<!--November 10, 2019: Kansas City, Missouri-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=34.74|lon_deg=-92.3071}}<!--November 10, 2019: Little Rock, Arkansas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=35.0607|lon_deg=-89.9939}}<!--November 10, 2019: Memphis, Tennessee-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=42.4186|lon_deg=-83.0634}}<!--November 9, 2019: Detroit, Michigan-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=32.2177|lon_deg=-82.4135}}<!--November 9, 2019: Vidalia, Georgia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=35.7658|lon_deg=-78.6325}}<!--November 8, 2019: Raleigh, North Carolina-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.6669|lon_deg=-83.9872}}<!--November 7, 2019: Conyers, Georgia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.6713|lon_deg=-95.3484}}<!--November 4, 2019: Houston, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=31.6501|lon_deg=-94.736}}<!--November 3, 2019: Nacogdoches, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.662|lon_deg=-83.5214}}<!--November 3, 2019: Toledo, Ohio-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=30.4262|lon_deg=-91.1809}}<!--November 2, 2019: Baton Rouge, Louisiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=42.3762|lon_deg=-83.0224}}<!--November 2, 2019: Detroit, Michigan-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=31.4446|lon_deg=-100.4345}}<!--November 1, 2019: San Angelo, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.45|lon_deg=-112.2593}}<!--November 1, 2019: Tolleson, Arizona-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=37.8723|lon_deg=-122.1841}}<!--October 31, 2019: Orinda, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.9492|lon_deg=-75.2237}}<!--October 30, 2019: Philadelphia, Pennsylvania-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.3317|lon_deg=-76.6958}}<!--October 29, 2019: Baltimore, Maryland-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.769|lon_deg=-118.1916}}<!--October 29, 2019: Long Beach, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.3372|lon_deg=-76.6631}}<!--October 28, 2019: Baltimore, Maryland-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=42.3316|lon_deg=-83.0466}}<!--October 27, 2019: Detroit, Michigan-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.1384|lon_deg=-96.1108}}<!--October 27, 2019: Greenville, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=42.7338|lon_deg=-84.5554}}<!--October 27, 2019: Lansing, Michigan-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.1384|lon_deg=-96.1108}}<!--October 26, 2019: Greenville, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.7282|lon_deg=-74.0776}}<!--October 26, 2019: Jersey City, New Jersey-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=35.4816|lon_deg=-97.5434}}<!--October 24, 2019: Oklahoma City, Oklahoma-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=35.473|lon_deg=-97.5171}}<!--October 22, 2019: Oklahoma City (Midwest City), Oklahoma-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.9521|lon_deg=-80.3768}}<!--October 21, 2019: Sumter, South Carolina-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.8864|lon_deg=-93.9315}}<!--October 20, 2019: Port Arthur, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.3682|lon_deg=-79.8496}}<!--October 19, 2019: Duquesne, Pennsylvania-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=31.819|lon_deg=-106.4474}}<!--October 19, 2019: El Paso, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.022|lon_deg=-82.9685}}<!--October 15, 2019: Columbus, Ohio-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=36.8746|lon_deg=-94.8774}}<!--October 15, 2019: Miami, Oklahoma-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.9527|lon_deg=-75.1635}}<!--October 14, 2019: Philadelphia, Pennsylvania-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=18.4653|lon_deg=-66.1167}}<!--October 14, 2019: San Juan, Puerto Rico-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.1178|lon_deg=-81.4849}}<!--October 13, 2019: Akron, Ohio-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.9527|lon_deg=-75.1635}}<!--October 13, 2019: Philadelphia, Pennsylvania-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.2912|lon_deg=-76.6302}}<!--October 12, 2019: Baltimore, Maryland-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.6764|lon_deg=-73.9302}}<!--October 12, 2019: Brooklyn, New York-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.9525|lon_deg=-87.7951}}<!--October 12, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.9119|lon_deg=-95.0622}}<!--October 12, 2019: Crosby, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=42.4796|lon_deg=-82.965}}<!--October 12, 2019: Eastpointe, Michigan-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.0036|lon_deg=-75.1416}}<!--October 12, 2019: Philadelphia, Pennsylvania-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=43.035|lon_deg=-87.9225}}<!--October 10, 2019: Milwaukee, Wisconsin-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.9373|lon_deg=-75.1519}}<!--October 10, 2019: Philadelphia, Pennsylvania-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=27.9478|lon_deg=-82.4584}}<!--October 10, 2019: Tampa, Florida-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.3102|lon_deg=-76.6434}}<!--October 9, 2019: Baltimore, Maryland-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=42.6573|lon_deg=-71.3092}}<!--October 9, 2019: Lowell, Massachusetts-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=42.1066|lon_deg=-70.9386}}<!--October 7, 2019: Abington, Massachusetts-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.7392|lon_deg=-104.9849}}<!--October 6, 2019: Denver, Colorado-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=37.9731|lon_deg=-87.561}}<!--October 6, 2019: Evansville, Indiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.1011|lon_deg=-94.636}}<!--October 6, 2019: Kansas City, Kansas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=34.6087|lon_deg=-98.3903}}<!--October 5, 2019: Lawton, Oklahoma-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.7503|lon_deg=-90.2605}}<!--October 5, 2019: Saint Louis, Missouri-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.109|lon_deg=-93.1935}}<!--October 3, 2019: Marshall, Missouri-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=36.382|lon_deg=-78.9854}}<!--October 3, 2019: Roxboro, North Carolina-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.6268|lon_deg=-90.1994}}<!--October 1, 2019: Saint Louis, Missouri-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=30.0467|lon_deg=-94.0855}}<!--September 29, 2019: Beaumont, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.525|lon_deg=-98.5337}}<!--September 29, 2019: Claflin, Kansas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=30.3248|lon_deg=-81.689}}<!--September 29, 2019: Jacksonville, Florida-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=43.0502|lon_deg=-87.9499}}<!--September 29, 2019: Milwaukee, Wisconsin-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=42.3534|lon_deg=-88.0934}}<!--September 29, 2019: Round Lake (Round Lake Park), Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.942|lon_deg=-83.5724}}<!--September 27, 2019: Seaman, Ohio-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.8548|lon_deg=-87.6785}}<!--September 24, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.5868|lon_deg=-87.3345}}<!--September 23, 2019: Gary, Indiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.0836|lon_deg=-94.482}}<!--September 22, 2019: Kansas City, Missouri-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.4612|lon_deg=-81.5814}}<!--September 21, 2019: Cleveland, Ohio-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.7656|lon_deg=-86.1601}}<!--September 21, 2019: Indianapolis, Indiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=34.742|lon_deg=-80.7779}}<!--September 21, 2019: Lancaster, South Carolina-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.9499|lon_deg=-90.0701}}<!--September 21, 2019: New Orleans, Louisiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.6834|lon_deg=-86.25}}<!--September 21, 2019: South Bend, Indiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.9499|lon_deg=-90.0701}}<!--September 20, 2019: New Orleans, Louisiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.8949|lon_deg=-77.0366}}<!--September 19, 2019: Washington, D.C.-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.9274|lon_deg=-77.03}}<!--September 19, 2019: Washington, District of Columbia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.881|lon_deg=-87.731}}<!--September 18, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.78|lon_deg=-118.2626}}<!--September 18, 2019: Wilmington, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.1356|lon_deg=-104.7668}}<!--September 16, 2019: Cheyenne, Wyoming-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.0174|lon_deg=-85.0428}}<!--September 14, 2019: Lagrange, Georgia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=37.7908|lon_deg=-122.1981}}<!--September 14, 2019: Oakland, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.5708|lon_deg=-90.2508}}<!--September 14, 2019: Saint Louis, Missouri-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.1015|lon_deg=-84.5125}}<!--September 13, 2019: Cincinnati, Ohio-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=35.0841|lon_deg=-106.651}}<!--September 12, 2019: Albuquerque, New Mexico-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=35.0641|lon_deg=-106.6843}}<!--September 12, 2019: Albuquerque, New Mexico-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.884|lon_deg=-87.6818}}<!--September 10, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=31.2857|lon_deg=-92.4439}}<!--September 8, 2019: Alexandria, Louisiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.9507|lon_deg=-80.3768}}<!--September 8, 2019: Sumter, South Carolina-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=34.3388|lon_deg=-78.7031}}<!--September 7, 2019: Whiteville, North Carolina-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=30.3844|lon_deg=-81.6591}}<!--September 4, 2019: Jacksonville, Florida-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.8994|lon_deg=-90.1004}}<!--September 4, 2019: Marrero, Louisiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.8756|lon_deg=-87.6244}}<!--September 2, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=34.9198|lon_deg=-86.9681}}<!--September 2, 2019: Elkmont, Alabama-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=36.0753|lon_deg=-79.8897}}<!--September 2, 2019: Greensboro, North Carolina-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.7646|lon_deg=-72.6909}}<!--September 1, 2019: Hartford, Connecticut-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=35.9673|lon_deg=-77.826}}<!--September 1, 2019: Rocky Mount, North Carolina-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.6827|lon_deg=-83.5271}}<!--September 1, 2019: Toledo, Ohio-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=32.7941|lon_deg=-85.1854}}<!--September 1, 2019: Valley, Alabama-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.2991|lon_deg=-76.6477}}<!--August 31, 2019: Baltimore, Maryland-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=35.3117|lon_deg=-80.7179}}<!--August 31, 2019: Charlotte, North Carolina-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.7643|lon_deg=-87.6663}}<!--August 31, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.4217|lon_deg=-77.4099}}<!--August 31, 2019: Frederick, Maryland-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.196|lon_deg=-80.0131}}<!--August 31, 2019: Moncks Corner, South Carolina-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=31.9246|lon_deg=-102.2844}}<!--August 31, 2019: Odessa, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.021|lon_deg=-75.1321}}<!--August 31, 2019: Philadelphia, Pennsylvania-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.3248|lon_deg=-76.5929}}<!--August 30, 2019: Baltimore, Maryland-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=30.6944|lon_deg=-88.0431}}<!--August 30, 2019: Mobile, Alabama-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.2989|lon_deg=-76.5822}}<!--August 29, 2019: Baltimore, Maryland-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=26.002|lon_deg=-80.3539}}<!--August 26, 2019: Pembroke Pines, Florida-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.7457|lon_deg=-87.6039}}<!--August 25, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=32.7036|lon_deg=-103.1164}}<!--August 25, 2019: Hobbs, New Mexico-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=26.3002|lon_deg=-80.182}}<!--August 24, 2019: Coconut Creek, Florida-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=42.4613|lon_deg=-70.9601}}<!--August 24, 2019: Lynn, Massachusetts-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.8175|lon_deg=-76.8987}}<!--August 24, 2019: Temple Hills (Camp Springs), Maryland-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=32.5176|lon_deg=-82.8961}}<!--August 23, 2019: Dublin, Georgia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.678|lon_deg=-95.3504}}<!--August 23, 2019: Houston, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.6582|lon_deg=-90.2725}}<!--August 23, 2019: Saint Louis, Missouri-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=34.0303|lon_deg=-81.1008}}<!--August 22, 2019: Columbia, South Carolina-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=34.0537|lon_deg=-118.2428}}<!--August 22, 2019: Los Angeles, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.7515|lon_deg=-84.4136}}<!--August 20, 2019: Atlanta, Georgia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.043|lon_deg=-94.5959}}<!--August 18, 2019: Kansas City, Missouri-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.7625|lon_deg=-95.2153}}<!--August 17, 2019: Houston, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.1001|lon_deg=-94.5781}}<!--August 17, 2019: Kansas City, Missouri-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=36.9786|lon_deg=-76.4321}}<!--August 17, 2019: Newport News, Virginia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=32.3626|lon_deg=-86.176}}<!--August 15, 2019: Montgomery, Alabama-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.0416|lon_deg=-75.1463}}<!--August 15, 2019: Philadelphia, Pennsylvania-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.5315|lon_deg=-80.5801}}<!--August 14, 2019: New Manchester, West Virginia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.0098|lon_deg=-75.1529}}<!--August 14, 2019: Philadelphia, Pennsylvania-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.5193|lon_deg=-90.1717}}<!--August 13, 2019: Greenwood, Mississippi-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=47.2496|lon_deg=-122.4399}}<!--August 13, 2019: Tacoma, Washington-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.5192|lon_deg=-90.174}}<!--August 12, 2019: Greenwood, Mississippi-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=35.7545|lon_deg=-81.3284}}<!--August 12, 2019: Hickory, North Carolina-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.4678|lon_deg=-117.0764}}<!--August 12, 2019: Riverside, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.8756|lon_deg=-87.6244}}<!--August 11, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=37.5039|lon_deg=-77.5123}}<!--August 10, 2019: Richmond, Virginia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=37.7798|lon_deg=-122.4317}}<!--August 10, 2019: San Francisco, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.7609|lon_deg=-87.6846}}<!--August 9, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.7101|lon_deg=-95.3563}}<!--August 9, 2019: Houston, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.7323|lon_deg=-74.2349}}<!--August 8, 2019: Irvington, New Jersey-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.6952|lon_deg=-90.2565}}<!--August 7, 2019: Saint Louis, Missouri-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=42.3316|lon_deg=-83.0466}}<!--August 6, 2019: Detroit, Michigan-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.8081|lon_deg=-84.1706}}<!--August 6, 2019: Stone Mountain, Georgia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.6717|lon_deg=-73.9255}}<!--August 5, 2019: Brooklyn, New York-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.4246|lon_deg=-98.4951}}<!--August 5, 2019: San Antonio, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.8487|lon_deg=-76.9239}}<!--August 5, 2019: Suitland, Maryland-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.8568|lon_deg=-87.7327}}<!--August 4, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.8666|lon_deg=-87.6985}}<!--August 4, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.7573|lon_deg=-84.1844}}<!--August 4, 2019: Dayton, Ohio-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.769|lon_deg=-89.8084}}<!--August 4, 2019: Grenada, Mississippi-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=30.2266|lon_deg=-93.2174}}<!--August 4, 2019: Lake Charles, Louisiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=35.0207|lon_deg=-90.0489}}<!--August 4, 2019: Memphis, Tennessee-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=31.76|lon_deg=-106.4873}}<!--August 3, 2019: El Paso, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.5773|lon_deg=-77.0305}}<!--August 2, 2019: Pomfret, Maryland-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=36.7317|lon_deg=-76.593}}<!--August 2, 2019: Suffolk, Virginia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.682|lon_deg=-85.9767}}<!--July 31, 2019: Elkhart, Indiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.9689|lon_deg=-82.9672}}<!--July 30, 2019: Columbus, Ohio-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=35.8204|lon_deg=-95.6741}}<!--July 30, 2019: Haskell, Oklahoma-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.5572|lon_deg=-95.8086}}<!--July 30, 2019: Rosenberg, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=34.989|lon_deg=-90.0126}}<!--July 30, 2019: Southaven, Mississippi-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.8666|lon_deg=-87.7247}}<!--July 28, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=44.9369|lon_deg=-91.3929}}<!--July 28, 2019: Chippewa Falls, Wisconsin-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=37.0065|lon_deg=-121.5632}}<!--July 28, 2019: Gilroy, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.9176|lon_deg=-75.2335}}<!--July 28, 2019: Philadelphia, Pennsylvania-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.8948|lon_deg=-79.7125}}<!--July 28, 2019: Uniontown, Pennsylvania-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.8949|lon_deg=-77.0366}}<!--July 28, 2019: Washington, D.C.-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.9157|lon_deg=-77.0214}}<!--July 28, 2019: Washington, District of Columbia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.6566|lon_deg=-73.9029}}<!--July 27, 2019: Brooklyn, New York-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=37.6922|lon_deg=-97.3375}}<!--July 27, 2019: Wichita, Kansas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=46.1982|lon_deg=-119.1041}}<!--July 26, 2019: Kennewick, Washington-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=35.3305|lon_deg=-80.2763}}<!--July 25, 2019: Albemarle, North Carolina-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=34.2198|lon_deg=-118.6044}}<!--July 25, 2019: Canoga Park, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=25.9879|lon_deg=-80.1748}}<!--July 23, 2019: Pembroke Park, Florida-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.8664|lon_deg=-87.7229}}<!--July 21, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.8949|lon_deg=-77.0366}}<!--July 21, 2019: Washington, D.C.-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.921|lon_deg=-76.9827}}<!--July 21, 2019: Washington, District of Columbia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.338|lon_deg=-76.6679}}<!--July 20, 2019: Baltimore, Maryland-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.8756|lon_deg=-87.6244}}<!--July 20, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.2943|lon_deg=-79.8863}}<!--July 20, 2019: Clairton, Pennsylvania-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.7282|lon_deg=-74.0776}}<!--July 20, 2019: Jersey City, New Jersey-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.886|lon_deg=-87.7123}}<!--July 18, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.5779|lon_deg=-101.8552}}<!--July 17, 2019: Lubbock, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.4246|lon_deg=-98.4951}}<!--July 16, 2019: San Antonio, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.7555|lon_deg=-84.3362}}<!--July 15, 2019: Atlanta, Georgia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.2909|lon_deg=-76.6108}}<!--July 15, 2019: Baltimore, Maryland-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.9499|lon_deg=-90.0701}}<!--July 15, 2019: New Orleans, Louisiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.8925|lon_deg=-87.7415}}<!--July 14, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.7499|lon_deg=-87.6587}}<!--July 13, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.977|lon_deg=-75.231}}<!--July 13, 2019: Philadelphia, Pennsylvania-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.6971|lon_deg=-95.3317}}<!--July 11, 2019: Houston, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=36.4218|lon_deg=-78.2831}}<!--July 8, 2019: Manson, North Carolina-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.8949|lon_deg=-77.0366}}<!--July 8, 2019: Washington, D.C.-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.8949|lon_deg=-77.0366}}<!--July 8, 2019: Washington, District of Columbia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=35.0841|lon_deg=-106.651}}<!--July 7, 2019: Albuquerque, New Mexico-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.7921|lon_deg=-87.6673}}<!--July 7, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.7826|lon_deg=-87.6402}}<!--July 7, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=43.0172|lon_deg=-83.7236}}<!--July 7, 2019: Flint, Michigan-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.6268|lon_deg=-90.1994}}<!--July 7, 2019: Saint Louis, Missouri-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=37.6922|lon_deg=-97.3375}}<!--July 7, 2019: Wichita, Kansas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=35.2271|lon_deg=-80.8431}}<!--July 6, 2019: Charlotte, North Carolina-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.6268|lon_deg=-90.1994}}<!--July 6, 2019: Saint Louis, Missouri-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=37.2681|lon_deg=-121.9143}}<!--July 6, 2019: San Jose, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=42.497|lon_deg=-82.8891}}<!--July 6, 2019: St. Clair Shores, Michigan-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=42.3603|lon_deg=-71.0583}}<!--July 5, 2019: Boston, Massachusetts-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.6725|lon_deg=-73.8831}}<!--July 5, 2019: Brooklyn, New York-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.7734|lon_deg=-87.5856}}<!--July 5, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=36.422|lon_deg=-94.4535}}<!--July 5, 2019: Gravette, Arkansas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.5348|lon_deg=-119.8006}}<!--July 5, 2019: Reno, Nevada-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.8956|lon_deg=-87.7116}}<!--July 4, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=36.7245|lon_deg=-119.7407}}<!--July 4, 2019: Fresno, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=34.0279|lon_deg=-118.2583}}<!--July 4, 2019: Los Angeles, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=42.2714|lon_deg=-89.1065}}<!--July 4, 2019: Rockford, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.7858|lon_deg=-95.8244}}<!--July 3, 2019: Katy, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.6268|lon_deg=-90.1994}}<!--July 2, 2019: Saint Louis (Wellston), Missouri-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.6306|lon_deg=-90.1063}}<!--July 2, 2019: Washington Park, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.3049|lon_deg=-76.5815}}<!--July 1, 2019: Baltimore, Maryland-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.747|lon_deg=-73.2599}}<!--June 30, 2019: Bay Shore, New York-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=32.8|lon_deg=-96.7894}}<!--June 30, 2019: Dallas, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=37.7924|lon_deg=-122.2158}}<!--June 30, 2019: Oakland, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=34.023|lon_deg=-117.0389}}<!--June 30, 2019: Yucaipa, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=30.4516|lon_deg=-91.1165}}<!--June 29, 2019: Baton Rouge, Louisiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.8756|lon_deg=-87.6244}}<!--June 29, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.6441|lon_deg=-90.7613}}<!--June 29, 2019: Gray, Louisiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.789|lon_deg=-72.6785}}<!--June 29, 2019: Hartford, Connecticut-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.7491|lon_deg=-84.3902}}<!--June 28, 2019: Atlanta, Georgia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.3959|lon_deg=-72.8969}}<!--June 28, 2019: Hamden, Connecticut-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.7028|lon_deg=-74.0874}}<!--June 28, 2019: Jersey City, New Jersey-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.9168|lon_deg=-74.1718}}<!--June 28, 2019: Paterson, New Jersey-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=44.9686|lon_deg=-93.0813}}<!--June 28, 2019: Saint Paul, Minnesota-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.7305|lon_deg=-84.3682}}<!--June 27, 2019: Atlanta, Georgia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.0536|lon_deg=-81.502}}<!--June 26, 2019: Akron, Ohio-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=43.0698|lon_deg=-87.9561}}<!--June 26, 2019: Milwaukee, Wisconsin-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=34.1779|lon_deg=-82.3792}}<!--June 23, 2019: Abbeville, South Carolina-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.0189|lon_deg=-82.9635}}<!--June 23, 2019: Columbus, Ohio-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=32.8398|lon_deg=-117.2762}}<!--June 23, 2019: La Jolla, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=37.301|lon_deg=-121.8421}}<!--June 23, 2019: San Jose, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.667|lon_deg=-86.234}}<!--June 23, 2019: South Bend, Indiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.3002|lon_deg=-76.5833}}<!--June 22, 2019: Baltimore, Maryland-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=37.0306|lon_deg=-76.3444}}<!--June 22, 2019: Hampton, Virginia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.9301|lon_deg=-75.1854}}<!--June 22, 2019: Philadelphia, Pennsylvania-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.8756|lon_deg=-87.6244}}<!--June 21, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=37.9422|lon_deg=-122.3563}}<!--June 21, 2019: Richmond, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=43.4295|lon_deg=-83.9678}}<!--June 21, 2019: Saginaw, Michigan-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=37.3412|lon_deg=-121.9128}}<!--June 21, 2019: Santa Maria, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.605|lon_deg=-75.4627}}<!--June 20, 2019: Allentown, Pennsylvania-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.7357|lon_deg=-74.1724}}<!--June 18, 2019: Newark, New Jersey-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=35.204|lon_deg=-89.9251}}<!--June 17, 2019: Memphis, Tennessee-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.4246|lon_deg=-98.4951}}<!--June 17, 2019: San Antonio, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.601|lon_deg=-93.5928}}<!--June 16, 2019: Des Moines, Iowa-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.2542|lon_deg=-85.7594}}<!--June 16, 2019: Louisville, Kentucky-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.9527|lon_deg=-75.1635}}<!--June 16, 2019: Philadelphia, Pennsylvania-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=32.4566|lon_deg=-93.7769}}<!--June 15, 2019: Shreveport, Louisiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.5645|lon_deg=-93.7595}}<!--June 15, 2019: West Des Moines, Iowa-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=35.2326|lon_deg=-80.8444}}<!--June 12, 2019: Charlotte, North Carolina-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.6947|lon_deg=-104.8424}}<!--June 11, 2019: Aurora, Colorado-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=32.0809|lon_deg=-81.0912}}<!--June 11, 2019: Savannah, Georgia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=42.9411|lon_deg=-78.9055}}<!--June 9, 2019: Buffalo, New York-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.4312|lon_deg=-81.5596}}<!--June 9, 2019: Cleveland, Ohio-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=35.6729|lon_deg=-89.5734}}<!--June 9, 2019: Henning, Tennessee-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.8756|lon_deg=-87.6244}}<!--June 8, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=46.4224|lon_deg=-120.8241}}<!--June 8, 2019: White Swan, Washington-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=30.2711|lon_deg=-97.7437}}<!--June 7, 2019: Austin, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.8756|lon_deg=-87.6244}}<!--June 6, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.4416|lon_deg=-122.7354}}<!--June 5, 2019: Santa Rosa, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.0352|lon_deg=-81.2158}}<!--June 1, 2019: Allendale, South Carolina-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.7547|lon_deg=-84.3914}}<!--June 1, 2019: Atlanta, Georgia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.8964|lon_deg=-87.6197}}<!--June 1, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.8806|lon_deg=-87.7657}}<!--June 1, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=32.8407|lon_deg=-83.6324}}<!--June 1, 2019: Macon, Georgia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=36.8364|lon_deg=-76.336}}<!--June 1, 2019: Portsmouth, Virginia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=36.751|lon_deg=-76.0575}}<!--May 31, 2019: Virginia Beach, Virginia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=34.0752|lon_deg=-117.9365}}<!--May 31, 2019: West Covina, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.6383|lon_deg=-87.706}}<!--May 30, 2019: Robbins, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=30.3428|lon_deg=-95.0892}}<!--May 29, 2019: Cleveland, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.9014|lon_deg=-90.1325}}<!--May 29, 2019: Reserve, Louisiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.7135|lon_deg=-90.2546}}<!--May 27, 2019: Saint Louis, Missouri-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.2171|lon_deg=-74.7429}}<!--May 27, 2019: Trenton, New Jersey-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.8949|lon_deg=-77.0366}}<!--May 27, 2019: Washington, D.C.-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.861|lon_deg=-76.9973}}<!--May 27, 2019: Washington, District of Columbia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.8756|lon_deg=-87.6244}}<!--May 26, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=36.7001|lon_deg=-78.0997}}<!--May 26, 2019: La Crosse, Virginia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=37.9597|lon_deg=-121.2847}}<!--May 26, 2019: Stockton, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.8949|lon_deg=-77.0366}}<!--May 26, 2019: Washington, D.C.-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.8392|lon_deg=-76.994}}<!--May 26, 2019: Washington, District of Columbia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.2972|lon_deg=-76.5788}}<!--May 25, 2019: Baltimore, Maryland-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=36.7998|lon_deg=-76.3996}}<!--May 25, 2019: Chesapeake, Virginia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=42.3903|lon_deg=-82.9344}}<!--May 25, 2019: Detroit, Michigan-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=35.473|lon_deg=-97.5171}}<!--May 25, 2019: Oklahoma City, Oklahoma-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.2282|lon_deg=-74.7613}}<!--May 25, 2019: Trenton, New Jersey-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=31.2865|lon_deg=-92.4558}}<!--May 20, 2019: Alexandria, Louisiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.9455|lon_deg=-83.0634}}<!--May 20, 2019: Columbus, Ohio-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=36.1388|lon_deg=-95.8863}}<!--May 20, 2019: Tulsa, Oklahoma-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=45.5202|lon_deg=-122.6742}}<!--May 19, 2019: Portland, Oregon-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=31.0382|lon_deg=-87.4797}}<!--May 18, 2019: Atmore, Alabama-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.8568|lon_deg=-90.0043}}<!--May 18, 2019: Cascilla, Mississippi-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.9214|lon_deg=-91.6556}}<!--May 18, 2019: Cedar Rapids, Iowa-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.769|lon_deg=-118.1916}}<!--May 18, 2019: Long Beach, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.2072|lon_deg=-85.4143}}<!--May 18, 2019: Muncie, Indiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.1978|lon_deg=-95.9563}}<!--May 18, 2019: Omaha, Nebraska-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=36.0998|lon_deg=-80.2441}}<!--May 18, 2019: Winston-Salem, North Carolina-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=36.1502|lon_deg=-80.251}}<!--May 18, 2019: Winston Salem (Winston-salem), North Carolina-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.5816|lon_deg=-121.4944}}<!--May 17, 2019: Sacramento, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.4349|lon_deg=-81.6173}}<!--May 16, 2019: Cleveland, Ohio-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.9471|lon_deg=-90.3173}}<!--May 15, 2019: Saint Rose, Louisiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=34.0006|lon_deg=-118.2971}}<!--May 14, 2019: Los Angeles, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.9499|lon_deg=-90.0701}}<!--May 13, 2019: New Orleans, Louisiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.6771|lon_deg=-90.2435}}<!--May 13, 2019: Saint Louis, Missouri-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.9393|lon_deg=-75.4349}}<!--May 11, 2019: Effort, Pennsylvania-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.8304|lon_deg=-75.2405}}<!--May 11, 2019: Paulsboro, New Jersey-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.9836|lon_deg=-75.1711}}<!--May 10, 2019: Philadelphia, Pennsylvania-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.6626|lon_deg=-90.2267}}<!--May 10, 2019: Saint Louis, Missouri-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.7683|lon_deg=-86.1584}}<!--May 8, 2019: Indianapolis, Indiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.6133|lon_deg=-105.0166}}<!--May 7, 2019: Littleton (Highlands Ranch), Colorado-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.7844|lon_deg=-74.0344}}<!--May 5, 2019: North Bergen, New Jersey-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=35.0989|lon_deg=-120.6124}}<!--May 5, 2019: Oceano, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.7656|lon_deg=-86.1601}}<!--May 4, 2019: Indianapolis, Indiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.6719|lon_deg=-90.2635}}<!--May 4, 2019: Saint Louis, Missouri-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.0009|lon_deg=-121.2967}}<!--May 4, 2019: Stockton, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.7459|lon_deg=-75.5466}}<!--May 4, 2019: Wilmington, Delaware-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.2833|lon_deg=-76.6472}}<!--May 3, 2019: Baltimore, Maryland-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.3049|lon_deg=-76.5825}}<!--May 3, 2019: Baltimore, Maryland-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=32.7763|lon_deg=-96.7969}}<!--May 3, 2019: Dallas, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=42.3144|lon_deg=-71.0623}}<!--May 1, 2019: Boston, Massachusetts-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=35.2271|lon_deg=-80.8431}}<!--April 30, 2019: Charlotte, North Carolina-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.2949|lon_deg=-76.6577}}<!--April 28, 2019: Baltimore, Maryland-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.5207|lon_deg=-86.8024}}<!--April 28, 2019: Birmingham, Alabama-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=36.172|lon_deg=-86.8078}}<!--April 28, 2019: Nashville, Tennessee-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.3504|lon_deg=-84.4653}}<!--April 28, 2019: West Chester, Ohio-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=42.2465|lon_deg=-84.4017}}<!--April 27, 2019: Jackson, Michigan-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=30.3615|lon_deg=-88.5354}}<!--April 27, 2019: Jackson, Mississippi-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=34.0537|lon_deg=-118.2428}}<!--April 27, 2019: Los Angeles, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.0191|lon_deg=-117.0532}}<!--April 27, 2019: Poway, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=34.0018|lon_deg=-95.5158}}<!--April 26, 2019: Hugo, Oklahoma-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=34.0537|lon_deg=-118.2428}}<!--April 21, 2019: Los Angeles, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.9351|lon_deg=-75.1958}}<!--April 21, 2019: Philadelphia, Pennsylvania-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=27.7828|lon_deg=-97.4222}}<!--April 20, 2019: Corpus Christi, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=35.1022|lon_deg=-90.037}}<!--April 20, 2019: Memphis, Tennessee-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=37.664|lon_deg=-97.3005}}<!--April 19, 2019: Wichita, Kansas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.2231|lon_deg=-85.8253}}<!--April 18, 2019: Louisville, Kentucky-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.1621|lon_deg=-77.2646}}<!--April 16, 2019: Germantown, Maryland-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=25.7743|lon_deg=-80.1937}}<!--April 14, 2019: Miami, Florida-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=37.9549|lon_deg=-121.2513}}<!--April 14, 2019: Stockton, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.1507|lon_deg=-122.2514}}<!--April 14, 2019: Vallejo, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.9173|lon_deg=-117.2523}}<!--April 13, 2019: Moreno Valley, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=37.7276|lon_deg=-89.2153}}<!--April 12, 2019: Carbondale, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.3152|lon_deg=-76.6479}}<!--April 11, 2019: Baltimore, Maryland-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=34.0537|lon_deg=-118.2428}}<!--April 11, 2019: Los Angeles, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.4486|lon_deg=-112.0773}}<!--April 11, 2019: Phoenix, Arizona-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.0297|lon_deg=-94.563}}<!--April 9, 2019: Kansas City, Missouri-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.8002|lon_deg=-86.1055}}<!--April 7, 2019: Indianapolis, Indiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=32.3909|lon_deg=-93.7642}}<!--April 7, 2019: Shreveport, Louisiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.7425|lon_deg=-75.5419}}<!--April 7, 2019: Wilmington, Delaware-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=36.0998|lon_deg=-80.2441}}<!--April 7, 2019: Winston-Salem, North Carolina-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=36.0998|lon_deg=-80.2441}}<!--April 7, 2019: Winston Salem (Winston-salem), North Carolina-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.7792|lon_deg=-87.6752}}<!--April 6, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=30.4227|lon_deg=-84.2898}}<!--April 6, 2019: Tallahassee, Florida-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=30.1461|lon_deg=-85.6543}}<!--April 4, 2019: Panama City, Florida-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.5207|lon_deg=-84.1867}}<!--April 4, 2019: Stockbridge, Georgia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.0836|lon_deg=-84.5084}}<!--April 2, 2019: Covington, Kentucky-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=31.9748|lon_deg=-90.8179}}<!--April 2, 2019: Hermanville, Mississippi-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.7087|lon_deg=-84.4872}}<!--March 31, 2019: Atlanta, Georgia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.89|lon_deg=-87.7211}}<!--March 31, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=32.8462|lon_deg=-79.9634}}<!--March 31, 2019: North Charleston, South Carolina-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.2909|lon_deg=-76.6108}}<!--March 28, 2019: Baltimore, Maryland-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=36.2008|lon_deg=-115.1121}}<!--March 25, 2019: North Las Vegas, Nevada-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.4662|lon_deg=-112.1067}}<!--March 24, 2019: Phoenix, Arizona-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=37.7816|lon_deg=-122.4323}}<!--March 24, 2019: San Francisco, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.4486|lon_deg=-112.0773}}<!--March 19, 2019: Phoenix, Arizona-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.471|lon_deg=-81.9748}}<!--March 17, 2019: Augusta, Georgia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=36.1688|lon_deg=-115.1393}}<!--March 17, 2019: Las Vegas, Nevada-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=31.9528|lon_deg=-83.4678}}<!--March 17, 2019: Rochelle, Georgia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.9216|lon_deg=-75.1171}}<!--March 16, 2019: Camden, New Jersey-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=30.6727|lon_deg=-88.087}}<!--March 15, 2019: Mobile, Alabama-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=46.8701|lon_deg=-113.9953}}<!--March 14, 2019: Missoula, Montana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.61|lon_deg=-87.6467}}<!--March 13, 2019: Harvey, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.9168|lon_deg=-74.1718}}<!--March 11, 2019: Paterson, New Jersey-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.7392|lon_deg=-104.9849}}<!--March 10, 2019: Denver, Colorado-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=32.4866|lon_deg=-93.793}}<!--March 10, 2019: Shreveport, Louisiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.7522|lon_deg=-87.5538}}<!--March 3, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=37.8033|lon_deg=-122.2679}}<!--March 3, 2019: Oakland, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=34.2047|lon_deg=-91.9949}}<!--March 2, 2019: Pine Bluff, Arkansas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.5264|lon_deg=-88.084}}<!--February 28, 2019: Joliet, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=37.7365|lon_deg=-122.1838}}<!--February 28, 2019: Oakland, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.6105|lon_deg=-86.6971}}<!--February 22, 2019: Birmingham, Alabama-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.3083|lon_deg=-76.6365}}<!--February 21, 2019: Baltimore, Maryland-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=37.7025|lon_deg=-85.8572}}<!--February 21, 2019: Elizabethtown, Kentucky-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.7921|lon_deg=-95.2116}}<!--February 21, 2019: Houston, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=35.5705|lon_deg=-89.6483}}<!--February 20, 2019: Covington, Tennessee-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=43.2613|lon_deg=-85.6119}}<!--February 18, 2019: Solon Township, Michigan-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=37.9792|lon_deg=-87.5551}}<!--February 17, 2019: Evansville, Indiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=32.1478|lon_deg=-94.8012}}<!--February 17, 2019: Henderson, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.9499|lon_deg=-90.0701}}<!--February 17, 2019: New Orleans, Louisiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=32.3516|lon_deg=-90.3207}}<!--February 16, 2019: Clinton, Mississippi-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.7547|lon_deg=-88.3316}}<!--February 15, 2019: Aurora, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=30.3322|lon_deg=-81.6557}}<!--February 14, 2019: Jacksonville, Florida-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=30.711|lon_deg=-94.933}}<!--February 11, 2019: Livingston, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=37.2248|lon_deg=-77.4086}}<!--February 9, 2019: Petersburg, Virginia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.679|lon_deg=-73.9284}}<!--February 6, 2019: Brooklyn, New York-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.5052|lon_deg=-81.6934}}<!--February 6, 2019: Cleveland, Ohio-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.3686|lon_deg=-98.4587}}<!--February 5, 2019: San Antonio, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=30.4858|lon_deg=-91.161}}<!--February 4, 2019: Baton Rouge, Louisiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.8949|lon_deg=-77.0366}}<!--February 4, 2019: Washington, D.C.-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=38.8737|lon_deg=-76.9718}}<!--February 4, 2019: Washington, District of Columbia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.7589|lon_deg=-87.6014}}<!--February 3, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.8246|lon_deg=-116.5403}}<!--February 3, 2019: Palm Springs, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=32.7281|lon_deg=-117.0526}}<!--February 1, 2019: San Diego, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.7093|lon_deg=-95.282}}<!--January 28, 2019: Houston, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.5207|lon_deg=-86.8024}}<!--January 27, 2019: Birmingham, Alabama-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=31.5815|lon_deg=-84.1539}}<!--January 26, 2019: Albany, Georgia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=30.2403|lon_deg=-90.8933}}<!--January 26, 2019: Gonzales, Louisiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=39.8099|lon_deg=-86.1025}}<!--January 26, 2019: Indianapolis, Indiana-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.7232|lon_deg=-74.1994}}<!--January 26, 2019: Newark, New Jersey-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.9991|lon_deg=-85.0591}}<!--January 24, 2019: Rockmart, Georgia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.7848|lon_deg=-77.8401}}<!--January 24, 2019: State College, Pennsylvania-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=27.4712|lon_deg=-81.4612}}<!--January 23, 2019: Sebring, Florida-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=25.5241|lon_deg=-80.4166}}<!--January 20, 2019: Miami, Florida-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=41.881|lon_deg=-87.7358}}<!--January 19, 2019: Chicago, Illinois-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=35.1095|lon_deg=-81.6059}}<!--January 19, 2019: Gaffney, South Carolina-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.7374|lon_deg=-95.3005}}<!--January 19, 2019: Houston, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=30.2692|lon_deg=-81.856}}<!--January 19, 2019: Jacksonville, Florida-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=40.3436|lon_deg=-76.4315}}<!--January 19, 2019: Lebanon, Pennsylvania-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=37.7656|lon_deg=-87.1273}}<!--January 17, 2019: Owensboro, Kentucky-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=30.3322|lon_deg=-81.6557}}<!--January 16, 2019: Jacksonville, Florida-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=34.5833|lon_deg=-118.2021}}<!--January 16, 2019: Palmdale, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=34.669|lon_deg=-92.3385}}<!--January 15, 2019: Little Rock, Arkansas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.4486|lon_deg=-112.0773}}<!--January 13, 2019: Phoenix, Arizona-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.4086|lon_deg=-104.5402}}<!--January 6, 2019: Roswell, New Mexico-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.7356|lon_deg=-95.2953}}<!--January 4, 2019: Houston, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=37.0926|lon_deg=-79.2964}}<!--January 4, 2019: Hurt, Virginia-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=33.8241|lon_deg=-118.3524}}<!--January 4, 2019: Torrance, California-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=29.3905|lon_deg=-94.9087}}<!--January 3, 2019: Texas City, Texas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=32.5603|lon_deg=-114.5653}}<!--January 3, 2019: Yuma, Arizona-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=35.8221|lon_deg=-90.6585}}<!--January 2, 2019: Jonesboro, Arkansas-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=34.0007|lon_deg=-81.0343}}<!--January 1, 2019: Columbia, South Carolina-->
+{{Location map~|United States|mark=Location dot red.svg|marksize=4|lat_deg=30.4381|lon_deg=-84.2809}}<!--January 1, 2019: Tallahassee, Florida-->
